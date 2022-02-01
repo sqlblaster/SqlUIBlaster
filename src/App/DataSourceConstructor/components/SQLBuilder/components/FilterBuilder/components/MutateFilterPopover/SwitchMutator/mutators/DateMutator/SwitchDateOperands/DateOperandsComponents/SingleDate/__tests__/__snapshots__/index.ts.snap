@@ -1,0 +1,883 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'After' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'After' operator - Fixed date - When enabled time is disabled 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Created At\\"::timestamp >= ('2019-01-01 00:00:00'::timestamp + interval '1 day')::date
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'After' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'After' operator - Fixed date - With date only 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Created At\\"::timestamp >= ('2019-01-01 00:00:00'::timestamp + interval '1 day')::date
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'After' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'After' operator - Relative date - Beginning of the current month 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Created At\\"::timestamp >= (date_trunc('month', now()) + interval '1 day')::date
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'After' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'After' operator - Relative date - Beginning of the current quarter 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Created At\\"::timestamp >= (date_trunc('quarter', now()) + interval '1 day')::date
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'After' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'After' operator - Relative date - Beginning of the current week 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Created At\\"::timestamp >= (date_trunc('week', now()) + interval '1 day')::date
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'After' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'After' operator - Relative date - Beginning of the current year 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Created At\\"::timestamp >= (date_trunc('year', now()) + interval '1 day')::date
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'After' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'After' operator - Relative date - End of the current month 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Created At\\"::timestamp >= ((date_trunc('month', now()) + interval '1 month - 1 day') + interval '1 day')::date
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'After' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'After' operator - Relative date - End of the current quarter 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Created At\\"::timestamp >= ((date_trunc('quarter', now()) + interval '3 month - 1 day') + interval '1 day')::date
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'After' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'After' operator - Relative date - End of the current week 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Created At\\"::timestamp >= ((date_trunc('week', now()) + interval '6 days') + interval '1 day')::date
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'After' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'After' operator - Relative date - End of the current year 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Created At\\"::timestamp >= ((date_trunc('year', now()) + interval '1 year - 1 day') + interval '1 day')::date
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'After' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'After' operator - Relative default date - Today 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Created At\\"::timestamp >= (now()::date + interval '1 day')::date
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'After' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'After' operator - Should pick one of variables and save 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Created At\\"::timestamp >= ($1::timestamp + interval '1 day')::date
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'After' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: After' operator - Fixed date - With certain time 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Created At\\"::timestamp > '2019-01-01 06:00:00'::timestamp
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'After' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: After' operator - Fixed date - With date and default time 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Created At\\"::timestamp > '2019-01-01 00:00:00'::timestamp
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'Before' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'Before' operator - Fixed date - When enabled time is disabled 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Created At\\"::timestamp < ('2019-01-01 00:00:00'::timestamp)::date
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'Before' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'Before' operator - Fixed date - With date only 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Created At\\"::timestamp < ('2019-01-01 00:00:00'::timestamp)::date
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'Before' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'Before' operator - Relative date - Beginning of the current month 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Created At\\"::timestamp < (date_trunc('month', now()))::date
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'Before' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'Before' operator - Relative date - Beginning of the current quarter 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Created At\\"::timestamp < (date_trunc('quarter', now()))::date
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'Before' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'Before' operator - Relative date - Beginning of the current week 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Created At\\"::timestamp < (date_trunc('week', now()))::date
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'Before' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'Before' operator - Relative date - Beginning of the current year 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Created At\\"::timestamp < (date_trunc('year', now()))::date
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'Before' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'Before' operator - Relative date - End of the current month 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Created At\\"::timestamp < ((date_trunc('month', now()) + interval '1 month - 1 day'))::date
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'Before' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'Before' operator - Relative date - End of the current quarter 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Created At\\"::timestamp < ((date_trunc('quarter', now()) + interval '3 month - 1 day'))::date
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'Before' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'Before' operator - Relative date - End of the current week 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Created At\\"::timestamp < ((date_trunc('week', now()) + interval '6 days'))::date
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'Before' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'Before' operator - Relative date - End of the current year 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Created At\\"::timestamp < ((date_trunc('year', now()) + interval '1 year - 1 day'))::date
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'Before' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'Before' operator - Relative default date - Today 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Created At\\"::timestamp < (now()::date)::date
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'Before' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'Before' operator - Should pick one of variables and save 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Created At\\"::timestamp < ($1::timestamp)::date
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'Before' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: Before' operator - Fixed date - With certain time 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Created At\\"::timestamp < '2019-01-01 06:00:00'::timestamp
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'Before' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: Before' operator - Fixed date - With date and default time 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Created At\\"::timestamp < '2019-01-01 00:00:00'::timestamp
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'On' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'On' operator - Fixed date - When enabled time is disabled 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Days', (\\"orders1\\".\\"Created At\\"::timestamp)::timestamp) = date_trunc('Days', ('2019-01-01 00:00:00'::timestamp)::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'On' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'On' operator - Fixed date - With date only 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Days', (\\"orders1\\".\\"Created At\\"::timestamp)::timestamp) = date_trunc('Days', ('2019-01-01 00:00:00'::timestamp)::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'On' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'On' operator - Relative date - Beginning of the current month 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Days', (\\"orders1\\".\\"Created At\\"::timestamp)::timestamp) = date_trunc('Days', (date_trunc('month', now()))::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'On' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'On' operator - Relative date - Beginning of the current quarter 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Days', (\\"orders1\\".\\"Created At\\"::timestamp)::timestamp) = date_trunc('Days', (date_trunc('quarter', now()))::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'On' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'On' operator - Relative date - Beginning of the current week 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Days', (\\"orders1\\".\\"Created At\\"::timestamp)::timestamp) = date_trunc('Days', (date_trunc('week', now()))::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'On' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'On' operator - Relative date - Beginning of the current year 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Days', (\\"orders1\\".\\"Created At\\"::timestamp)::timestamp) = date_trunc('Days', (date_trunc('year', now()))::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'On' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'On' operator - Relative date - End of the current month 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Days', (\\"orders1\\".\\"Created At\\"::timestamp)::timestamp) = date_trunc('Days', ((date_trunc('month', now()) + interval '1 month - 1 day'))::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'On' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'On' operator - Relative date - End of the current quarter 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Days', (\\"orders1\\".\\"Created At\\"::timestamp)::timestamp) = date_trunc('Days', ((date_trunc('quarter', now()) + interval '3 month - 1 day'))::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'On' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'On' operator - Relative date - End of the current week 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Days', (\\"orders1\\".\\"Created At\\"::timestamp)::timestamp) = date_trunc('Days', ((date_trunc('week', now()) + interval '6 days'))::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'On' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'On' operator - Relative date - End of the current year 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Days', (\\"orders1\\".\\"Created At\\"::timestamp)::timestamp) = date_trunc('Days', ((date_trunc('year', now()) + interval '1 year - 1 day'))::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'On' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'On' operator - Relative default date - Today 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Days', (\\"orders1\\".\\"Created At\\"::timestamp)::timestamp) = date_trunc('Days', (now()::date)::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'On' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: 'On' operator - Should pick one of variables and save 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Days', (\\"orders1\\".\\"Created At\\"::timestamp)::timestamp) = date_trunc('Days', ($1::timestamp)::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'On' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: On' operator - Fixed date - With certain time 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Minutes', (\\"orders1\\".\\"Created At\\"::timestamp)::timestamp) = date_trunc('Minutes', ('2019-01-01 06:00:00'::timestamp)::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Single Date: Before, After, On operations should render sql queries properly on 'On' operator:
+    on all cases:
+      - Fixed date:
+        - With date only
+        - With date and time
+        - Enabled time to be disabled
+      - Variable date:
+        - When there are no variables should show appropriate text and can't save
+        - When there are variables should show placeholder and can't save
+        - Should pick one of variables and save
+      - All Relative date cases: On' operator - Fixed date - With date and default time 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Minutes', (\\"orders1\\".\\"Created At\\"::timestamp)::timestamp) = date_trunc('Minutes', ('2019-01-01 00:00:00'::timestamp)::timestamp)
+LIMIT 2000
+"
+`;

@@ -1,0 +1,32 @@
+.add-entity {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  span.text {
+    transition: 0.3s;
+    font-size: 14px;
+    color: #ccd1d6;
+  }
+
+  .add-icon {
+    font-size: 22px;
+    padding: 2px;
+    margin: 0;
+    color: #ccd1d6;
+    border: 1px solid #ccd1d6;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+
+  &:hover {
+    span.text {
+      color: #77828d;
+    }
+
+    .add-icon {
+      color: #77828d;
+      border: 1px solid #77828d;
+    }
+  }
+}

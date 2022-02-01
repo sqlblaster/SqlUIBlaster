@@ -1,0 +1,375 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dates Between operation should render sql query on:
+        - default operands values with fixed dates
+          - check for date limits
+        - time enabled on first operand
+        - time enabled on both operands
+        - variable date operand and fixed date operand with time
+        - relative date operand and fixed date operand with time
+        - relative date operand and fixed date operand without time
+        - variable date operand and fixed date operand without time
+        - variable date operand and variable date operand
+          - save button should be disabled when at least
+            one variable operand is not picked
+        - variable date operand and relative date operand
+        - relative date operand and relative date operand
+  : Default operands values with fixed dates 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  CASE WHEN '2019-01-01 00:00:00'::date < '2019-01-02 00:00:00'::date THEN
+    \\"orders1\\".\\"Created At\\" >= ('2019-01-01 00:00:00'::date + interval '1 day')::date
+    AND \\"orders1\\".\\"Created At\\" < ('2019-01-02 00:00:00'::date)::date
+  ELSE
+    \\"orders1\\".\\"Created At\\" >= ('2019-01-02 00:00:00'::date + interval '1 day')::date
+    AND \\"orders1\\".\\"Created At\\" < ('2019-01-01 00:00:00'::date)::date
+END
+LIMIT 2000
+"
+`;
+
+exports[`Dates Between operation should render sql query on:
+        - default operands values with fixed dates
+          - check for date limits
+        - time enabled on first operand
+        - time enabled on both operands
+        - variable date operand and fixed date operand with time
+        - relative date operand and fixed date operand with time
+        - relative date operand and fixed date operand without time
+        - variable date operand and fixed date operand without time
+        - variable date operand and variable date operand
+          - save button should be disabled when at least
+            one variable operand is not picked
+        - variable date operand and relative date operand
+        - relative date operand and relative date operand
+  : Max date is 1`] = `"Max date is: Wed Jan 02 2019"`;
+
+exports[`Dates Between operation should render sql query on:
+        - default operands values with fixed dates
+          - check for date limits
+        - time enabled on first operand
+        - time enabled on both operands
+        - variable date operand and fixed date operand with time
+        - relative date operand and fixed date operand with time
+        - relative date operand and fixed date operand without time
+        - variable date operand and fixed date operand without time
+        - variable date operand and variable date operand
+          - save button should be disabled when at least
+            one variable operand is not picked
+        - variable date operand and relative date operand
+        - relative date operand and relative date operand
+  : Max date message is 1`] = `"Max date message is: Couldn't set time, because selected date is later than second date"`;
+
+exports[`Dates Between operation should render sql query on:
+        - default operands values with fixed dates
+          - check for date limits
+        - time enabled on first operand
+        - time enabled on both operands
+        - variable date operand and fixed date operand with time
+        - relative date operand and fixed date operand with time
+        - relative date operand and fixed date operand without time
+        - variable date operand and fixed date operand without time
+        - variable date operand and variable date operand
+          - save button should be disabled when at least
+            one variable operand is not picked
+        - variable date operand and relative date operand
+        - relative date operand and relative date operand
+  : Min date is 1`] = `"Min date is: Tue Jan 01 2019"`;
+
+exports[`Dates Between operation should render sql query on:
+        - default operands values with fixed dates
+          - check for date limits
+        - time enabled on first operand
+        - time enabled on both operands
+        - variable date operand and fixed date operand with time
+        - relative date operand and fixed date operand with time
+        - relative date operand and fixed date operand without time
+        - variable date operand and fixed date operand without time
+        - variable date operand and variable date operand
+          - save button should be disabled when at least
+            one variable operand is not picked
+        - variable date operand and relative date operand
+        - relative date operand and relative date operand
+  : Min date message is 1`] = `"Min date message is: Couldn't set time, because selected date is earlier than first date"`;
+
+exports[`Dates Between operation should render sql query on:
+        - default operands values with fixed dates
+          - check for date limits
+        - time enabled on first operand
+        - time enabled on both operands
+        - variable date operand and fixed date operand with time
+        - relative date operand and fixed date operand with time
+        - relative date operand and fixed date operand without time
+        - variable date operand and fixed date operand without time
+        - variable date operand and variable date operand
+          - save button should be disabled when at least
+            one variable operand is not picked
+        - variable date operand and relative date operand
+        - relative date operand and relative date operand
+  : Time enabled on both operands 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  CASE WHEN '2019-01-01 06:00:00'::timestamp < '2019-01-02 20:00:00'::timestamp THEN
+    \\"orders1\\".\\"Created At\\" > '2019-01-01 06:00:00'::timestamp
+    AND \\"orders1\\".\\"Created At\\" < '2019-01-02 20:00:00'::timestamp
+  ELSE
+    \\"orders1\\".\\"Created At\\" > '2019-01-02 20:00:00'::timestamp
+    AND \\"orders1\\".\\"Created At\\" < '2019-01-01 06:00:00'::timestamp
+END
+LIMIT 2000
+"
+`;
+
+exports[`Dates Between operation should render sql query on:
+        - default operands values with fixed dates
+          - check for date limits
+        - time enabled on first operand
+        - time enabled on both operands
+        - variable date operand and fixed date operand with time
+        - relative date operand and fixed date operand with time
+        - relative date operand and fixed date operand without time
+        - variable date operand and fixed date operand without time
+        - variable date operand and variable date operand
+          - save button should be disabled when at least
+            one variable operand is not picked
+        - variable date operand and relative date operand
+        - relative date operand and relative date operand
+  : Time enabled on first operand 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  CASE WHEN '2019-01-01 06:00:00'::timestamp < '2019-01-02 00:00:00'::date THEN
+    \\"orders1\\".\\"Created At\\" > '2019-01-01 06:00:00'::timestamp
+    AND \\"orders1\\".\\"Created At\\" < ('2019-01-02 00:00:00'::date)::date
+  ELSE
+    \\"orders1\\".\\"Created At\\" >= ('2019-01-02 00:00:00'::date + interval '1 day')::date
+    AND \\"orders1\\".\\"Created At\\" < '2019-01-01 06:00:00'::timestamp
+END
+LIMIT 2000
+"
+`;
+
+exports[`Dates Between operation should render sql query on:
+        - default operands values with fixed dates
+          - check for date limits
+        - time enabled on first operand
+        - time enabled on both operands
+        - variable date operand and fixed date operand with time
+        - relative date operand and fixed date operand with time
+        - relative date operand and fixed date operand without time
+        - variable date operand and fixed date operand without time
+        - variable date operand and variable date operand
+          - save button should be disabled when at least
+            one variable operand is not picked
+        - variable date operand and relative date operand
+        - relative date operand and relative date operand
+  : relative date operand and fixed date operand with time 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  CASE WHEN now()::date < '2019-01-02 20:00:00'::timestamp THEN
+    \\"orders1\\".\\"Created At\\" >= (now()::date + interval '1 day')::date
+    AND \\"orders1\\".\\"Created At\\" < '2019-01-02 20:00:00'::timestamp
+  ELSE
+    \\"orders1\\".\\"Created At\\" > '2019-01-02 20:00:00'::timestamp
+    AND \\"orders1\\".\\"Created At\\" < (now()::date)::date
+END
+LIMIT 2000
+"
+`;
+
+exports[`Dates Between operation should render sql query on:
+        - default operands values with fixed dates
+          - check for date limits
+        - time enabled on first operand
+        - time enabled on both operands
+        - variable date operand and fixed date operand with time
+        - relative date operand and fixed date operand with time
+        - relative date operand and fixed date operand without time
+        - variable date operand and fixed date operand without time
+        - variable date operand and variable date operand
+          - save button should be disabled when at least
+            one variable operand is not picked
+        - variable date operand and relative date operand
+        - relative date operand and relative date operand
+  : relative date operand and fixed date operand without time 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  CASE WHEN now()::date < '2019-01-02 00:00:00'::date THEN
+    \\"orders1\\".\\"Created At\\" >= (now()::date + interval '1 day')::date
+    AND \\"orders1\\".\\"Created At\\" < ('2019-01-02 00:00:00'::date)::date
+  ELSE
+    \\"orders1\\".\\"Created At\\" >= ('2019-01-02 00:00:00'::date + interval '1 day')::date
+    AND \\"orders1\\".\\"Created At\\" < (now()::date)::date
+END
+LIMIT 2000
+"
+`;
+
+exports[`Dates Between operation should render sql query on:
+        - default operands values with fixed dates
+          - check for date limits
+        - time enabled on first operand
+        - time enabled on both operands
+        - variable date operand and fixed date operand with time
+        - relative date operand and fixed date operand with time
+        - relative date operand and fixed date operand without time
+        - variable date operand and fixed date operand without time
+        - variable date operand and variable date operand
+          - save button should be disabled when at least
+            one variable operand is not picked
+        - variable date operand and relative date operand
+        - relative date operand and relative date operand
+  : relative date operand and relative date operand 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  CASE WHEN date_trunc('week', now()) < (date_trunc('week', now()) + interval '6 days') THEN
+    \\"orders1\\".\\"Created At\\" >= (date_trunc('week', now()) + interval '1 day')::date
+    AND \\"orders1\\".\\"Created At\\" < ((date_trunc('week', now()) + interval '6 days'))::date
+  ELSE
+    \\"orders1\\".\\"Created At\\" >= ((date_trunc('week', now()) + interval '6 days') + interval '1 day')::date
+    AND \\"orders1\\".\\"Created At\\" < (date_trunc('week', now()))::date
+END
+LIMIT 2000
+"
+`;
+
+exports[`Dates Between operation should render sql query on:
+        - default operands values with fixed dates
+          - check for date limits
+        - time enabled on first operand
+        - time enabled on both operands
+        - variable date operand and fixed date operand with time
+        - relative date operand and fixed date operand with time
+        - relative date operand and fixed date operand without time
+        - variable date operand and fixed date operand without time
+        - variable date operand and variable date operand
+          - save button should be disabled when at least
+            one variable operand is not picked
+        - variable date operand and relative date operand
+        - relative date operand and relative date operand
+  : variable date operand and fixed date operand with time 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  CASE WHEN $1::date < '2019-01-02 20:00:00'::timestamp THEN
+    \\"orders1\\".\\"Created At\\" >= ($1::date + interval '1 day')::date
+    AND \\"orders1\\".\\"Created At\\" < '2019-01-02 20:00:00'::timestamp
+  ELSE
+    \\"orders1\\".\\"Created At\\" > '2019-01-02 20:00:00'::timestamp
+    AND \\"orders1\\".\\"Created At\\" < ($1::date)::date
+END
+LIMIT 2000
+"
+`;
+
+exports[`Dates Between operation should render sql query on:
+        - default operands values with fixed dates
+          - check for date limits
+        - time enabled on first operand
+        - time enabled on both operands
+        - variable date operand and fixed date operand with time
+        - relative date operand and fixed date operand with time
+        - relative date operand and fixed date operand without time
+        - variable date operand and fixed date operand without time
+        - variable date operand and variable date operand
+          - save button should be disabled when at least
+            one variable operand is not picked
+        - variable date operand and relative date operand
+        - relative date operand and relative date operand
+  : variable date operand and fixed date operand without time 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  CASE WHEN $1::date < '2019-01-02 00:00:00'::date THEN
+    \\"orders1\\".\\"Created At\\" >= ($1::date + interval '1 day')::date
+    AND \\"orders1\\".\\"Created At\\" < ('2019-01-02 00:00:00'::date)::date
+  ELSE
+    \\"orders1\\".\\"Created At\\" >= ('2019-01-02 00:00:00'::date + interval '1 day')::date
+    AND \\"orders1\\".\\"Created At\\" < ($1::date)::date
+END
+LIMIT 2000
+"
+`;
+
+exports[`Dates Between operation should render sql query on:
+        - default operands values with fixed dates
+          - check for date limits
+        - time enabled on first operand
+        - time enabled on both operands
+        - variable date operand and fixed date operand with time
+        - relative date operand and fixed date operand with time
+        - relative date operand and fixed date operand without time
+        - variable date operand and fixed date operand without time
+        - variable date operand and variable date operand
+          - save button should be disabled when at least
+            one variable operand is not picked
+        - variable date operand and relative date operand
+        - relative date operand and relative date operand
+  : variable date operand and relative date operand 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  CASE WHEN $1::date < now()::date THEN
+    \\"orders1\\".\\"Created At\\" >= ($1::date + interval '1 day')::date
+    AND \\"orders1\\".\\"Created At\\" < (now()::date)::date
+  ELSE
+    \\"orders1\\".\\"Created At\\" >= (now()::date + interval '1 day')::date
+    AND \\"orders1\\".\\"Created At\\" < ($1::date)::date
+END
+LIMIT 2000
+"
+`;
+
+exports[`Dates Between operation should render sql query on:
+        - default operands values with fixed dates
+          - check for date limits
+        - time enabled on first operand
+        - time enabled on both operands
+        - variable date operand and fixed date operand with time
+        - relative date operand and fixed date operand with time
+        - relative date operand and fixed date operand without time
+        - variable date operand and fixed date operand without time
+        - variable date operand and variable date operand
+          - save button should be disabled when at least
+            one variable operand is not picked
+        - variable date operand and relative date operand
+        - relative date operand and relative date operand
+  : variable date operand and variable date operand 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  CASE WHEN $1::date < $2::date THEN
+    \\"orders1\\".\\"Created At\\" >= ($1::date + interval '1 day')::date
+    AND \\"orders1\\".\\"Created At\\" < ($2::date)::date
+  ELSE
+    \\"orders1\\".\\"Created At\\" >= ($2::date + interval '1 day')::date
+    AND \\"orders1\\".\\"Created At\\" < ($1::date)::date
+END
+LIMIT 2000
+"
+`;

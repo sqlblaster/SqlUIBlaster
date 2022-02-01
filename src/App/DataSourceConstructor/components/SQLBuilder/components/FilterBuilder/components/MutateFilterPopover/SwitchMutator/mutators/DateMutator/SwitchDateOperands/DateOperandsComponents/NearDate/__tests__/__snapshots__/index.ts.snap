@@ -1,0 +1,595 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : Current date notation for Previous date operator by Days 1`] = `"Include today"`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : Current date notation for Previous date operator by Hours 1`] = `"Include this hour"`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : Current date notation for Previous date operator by Minutes 1`] = `"Include this minute"`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : Current date notation for Previous date operator by Months 1`] = `"Include this month"`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : Current date notation for Previous date operator by Weeks 1`] = `"Include this week"`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : Current date notation for Previous date operator by Years 1`] = `"Include this year"`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : Next date operator by Days  1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Days', (\\"orders1\\".\\"Created At\\")::timestamp) >= date_trunc('Days', (now() + interval '1 Days')::timestamp)
+  AND date_trunc('Days', (\\"orders1\\".\\"Created At\\")::timestamp) <= date_trunc('Days', (now() + interval '30 Days')::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : Next date operator by Days  including current Day 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Days', (\\"orders1\\".\\"Created At\\")::timestamp) >= date_trunc('Days', (now())::timestamp)
+  AND date_trunc('Days', (\\"orders1\\".\\"Created At\\")::timestamp) <= date_trunc('Days', (now() + interval '30 Days')::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : Next date operator by Hours  1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Hours', (\\"orders1\\".\\"Created At\\")::timestamp) >= date_trunc('Hours', (now() + interval '1 Hours')::timestamp)
+  AND date_trunc('Hours', (\\"orders1\\".\\"Created At\\")::timestamp) <= date_trunc('Hours', (now() + interval '30 Hours')::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : Next date operator by Hours  including current Hour 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Hours', (\\"orders1\\".\\"Created At\\")::timestamp) >= date_trunc('Hours', (now())::timestamp)
+  AND date_trunc('Hours', (\\"orders1\\".\\"Created At\\")::timestamp) <= date_trunc('Hours', (now() + interval '30 Hours')::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : Next date operator by Minutes  1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Minutes', (\\"orders1\\".\\"Created At\\")::timestamp) >= date_trunc('Minutes', (now() + interval '1 Minutes')::timestamp)
+  AND date_trunc('Minutes', (\\"orders1\\".\\"Created At\\")::timestamp) <= date_trunc('Minutes', (now() + interval '30 Minutes')::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : Next date operator by Minutes  including current Minute 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Minutes', (\\"orders1\\".\\"Created At\\")::timestamp) >= date_trunc('Minutes', (now())::timestamp)
+  AND date_trunc('Minutes', (\\"orders1\\".\\"Created At\\")::timestamp) <= date_trunc('Minutes', (now() + interval '30 Minutes')::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : Next date operator by Months  1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Months', (\\"orders1\\".\\"Created At\\")::timestamp) >= date_trunc('Months', (now() + interval '1 Months')::timestamp)
+  AND date_trunc('Months', (\\"orders1\\".\\"Created At\\")::timestamp) <= date_trunc('Months', (now() + interval '30 Months')::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : Next date operator by Months  including current Month 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Months', (\\"orders1\\".\\"Created At\\")::timestamp) >= date_trunc('Months', (now())::timestamp)
+  AND date_trunc('Months', (\\"orders1\\".\\"Created At\\")::timestamp) <= date_trunc('Months', (now() + interval '30 Months')::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : Next date operator by Weeks  1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Weeks', (\\"orders1\\".\\"Created At\\")::timestamp) >= date_trunc('Weeks', (now() + interval '1 Weeks')::timestamp)
+  AND date_trunc('Weeks', (\\"orders1\\".\\"Created At\\")::timestamp) <= date_trunc('Weeks', (now() + interval '30 Weeks')::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : Next date operator by Weeks  including current Week 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Weeks', (\\"orders1\\".\\"Created At\\")::timestamp) >= date_trunc('Weeks', (now())::timestamp)
+  AND date_trunc('Weeks', (\\"orders1\\".\\"Created At\\")::timestamp) <= date_trunc('Weeks', (now() + interval '30 Weeks')::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : Next date operator by Years  1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Years', (\\"orders1\\".\\"Created At\\")::timestamp) >= date_trunc('Years', (now() + interval '1 Years')::timestamp)
+  AND date_trunc('Years', (\\"orders1\\".\\"Created At\\")::timestamp) <= date_trunc('Years', (now() + interval '30 Years')::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : Next date operator by Years  including current Year 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Years', (\\"orders1\\".\\"Created At\\")::timestamp) >= date_trunc('Years', (now())::timestamp)
+  AND date_trunc('Years', (\\"orders1\\".\\"Created At\\")::timestamp) <= date_trunc('Years', (now() + interval '30 Years')::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : Previous date operator by Days  1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Days', (\\"orders1\\".\\"Created At\\")::timestamp) >= date_trunc('Days', (now() + interval '-30 Days')::timestamp)
+  AND date_trunc('Days', (\\"orders1\\".\\"Created At\\")::timestamp) <= date_trunc('Days', (now() + interval '-1 Days')::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : Previous date operator by Days  including current Day 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Days', (\\"orders1\\".\\"Created At\\")::timestamp) >= date_trunc('Days', (now() + interval '-30 Days')::timestamp)
+  AND date_trunc('Days', (\\"orders1\\".\\"Created At\\")::timestamp) <= date_trunc('Days', (now())::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : Previous date operator by Hours  1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Hours', (\\"orders1\\".\\"Created At\\")::timestamp) >= date_trunc('Hours', (now() + interval '-30 Hours')::timestamp)
+  AND date_trunc('Hours', (\\"orders1\\".\\"Created At\\")::timestamp) <= date_trunc('Hours', (now() + interval '-1 Hours')::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : Previous date operator by Hours  including current Hour 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Hours', (\\"orders1\\".\\"Created At\\")::timestamp) >= date_trunc('Hours', (now() + interval '-30 Hours')::timestamp)
+  AND date_trunc('Hours', (\\"orders1\\".\\"Created At\\")::timestamp) <= date_trunc('Hours', (now())::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : Previous date operator by Minutes  1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Minutes', (\\"orders1\\".\\"Created At\\")::timestamp) >= date_trunc('Minutes', (now() + interval '-30 Minutes')::timestamp)
+  AND date_trunc('Minutes', (\\"orders1\\".\\"Created At\\")::timestamp) <= date_trunc('Minutes', (now() + interval '-1 Minutes')::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : Previous date operator by Minutes  including current Minute 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Minutes', (\\"orders1\\".\\"Created At\\")::timestamp) >= date_trunc('Minutes', (now() + interval '-30 Minutes')::timestamp)
+  AND date_trunc('Minutes', (\\"orders1\\".\\"Created At\\")::timestamp) <= date_trunc('Minutes', (now())::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : Previous date operator by Months  1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Months', (\\"orders1\\".\\"Created At\\")::timestamp) >= date_trunc('Months', (now() + interval '-30 Months')::timestamp)
+  AND date_trunc('Months', (\\"orders1\\".\\"Created At\\")::timestamp) <= date_trunc('Months', (now() + interval '-1 Months')::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : Previous date operator by Months  including current Month 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Months', (\\"orders1\\".\\"Created At\\")::timestamp) >= date_trunc('Months', (now() + interval '-30 Months')::timestamp)
+  AND date_trunc('Months', (\\"orders1\\".\\"Created At\\")::timestamp) <= date_trunc('Months', (now())::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : Previous date operator by Weeks  1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Weeks', (\\"orders1\\".\\"Created At\\")::timestamp) >= date_trunc('Weeks', (now() + interval '-30 Weeks')::timestamp)
+  AND date_trunc('Weeks', (\\"orders1\\".\\"Created At\\")::timestamp) <= date_trunc('Weeks', (now() + interval '-1 Weeks')::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : Previous date operator by Weeks  including current Week 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Weeks', (\\"orders1\\".\\"Created At\\")::timestamp) >= date_trunc('Weeks', (now() + interval '-30 Weeks')::timestamp)
+  AND date_trunc('Weeks', (\\"orders1\\".\\"Created At\\")::timestamp) <= date_trunc('Weeks', (now())::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : Previous date operator by Years  1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Years', (\\"orders1\\".\\"Created At\\")::timestamp) >= date_trunc('Years', (now() + interval '-30 Years')::timestamp)
+  AND date_trunc('Years', (\\"orders1\\".\\"Created At\\")::timestamp) <= date_trunc('Years', (now() + interval '-1 Years')::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : Previous date operator by Years  including current Year 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Years', (\\"orders1\\".\\"Created At\\")::timestamp) >= date_trunc('Years', (now() + interval '-30 Years')::timestamp)
+  AND date_trunc('Years', (\\"orders1\\".\\"Created At\\")::timestamp) <= date_trunc('Years', (now())::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : Previous operator by Days should be default one 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Days', (\\"orders1\\".\\"Created At\\")::timestamp) >= date_trunc('Days', (now() + interval '-30 Days')::timestamp)
+  AND date_trunc('Days', (\\"orders1\\".\\"Created At\\")::timestamp) <= date_trunc('Days', (now() + interval '-1 Days')::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : filter description for Next date operator by Days 1`] = `"Created AtNext 30 Days"`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : filter description for Next date operator by Hours 1`] = `"Created AtNext 30 Hours"`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : filter description for Next date operator by Minutes 1`] = `"Created AtNext 30 Minutes"`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : filter description for Next date operator by Months 1`] = `"Created AtNext 30 Months"`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : filter description for Next date operator by Weeks 1`] = `"Created AtNext 30 Weeks"`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : filter description for Next date operator by Years 1`] = `"Created AtNext 30 Years"`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : filter description for Previous date operator by Days 1`] = `"Created AtPast 30 Days"`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : filter description for Previous date operator by Hours 1`] = `"Created AtPast 30 Hours"`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : filter description for Previous date operator by Minutes 1`] = `"Created AtPast 30 Minutes"`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : filter description for Previous date operator by Months 1`] = `"Created AtPast 30 Months"`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : filter description for Previous date operator by Weeks 1`] = `"Created AtPast 30 Weeks"`;
+
+exports[`Previous and Next date operations should render proper sql query on:
+        - Both Previous and Next operators
+        - All kind of date components
+        - Including and excluding the current date component
+      should check the shift amount text field,
+      should check the proper filter description render
+  : filter description for Previous date operator by Years 1`] = `"Created AtPast 30 Years"`;

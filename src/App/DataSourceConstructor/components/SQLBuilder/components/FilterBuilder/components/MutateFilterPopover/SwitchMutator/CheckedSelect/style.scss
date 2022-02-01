@@ -1,0 +1,38 @@
+.checked-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0px;
+  font-size: 13px;
+  font-weight: 400;
+  cursor: pointer;
+
+  &.has-border {
+    border: 1px solid #EBECED;
+    border-radius: 5px;
+  }
+
+  .selected-item-value {
+    margin-left: 5px;
+  }
+}
+
+.select-items {
+  .item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 13px;
+    color: #45494F;
+    cursor: pointer;
+
+    &.selected {
+      color: #709EDF;
+    }
+
+    &:hover {
+      background: #6D9CDF;
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ColumnSelector should pass initial level value, root table branch,
+    and redux states to TableColumns component 1`] = `
+Object {
+  "level": 0,
+  "tableBranch": Object {
+    "_foreignTableName": undefined,
+    "_lastColumn": undefined,
+    "columnName": "",
+    "foreignColumn": undefined,
+    "foreignModelName": undefined,
+    "foreignTableName": undefined,
+    "modelName": "Users",
+    "tableName": "users",
+    "type": undefined,
+  },
+}
+`;

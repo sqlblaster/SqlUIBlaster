@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Custom Columns Builder should be able to
+        shows the add custom column placeholder,
+        add the 1 lvl custom column,
+        hide the add custom column placeholder,
+        update custom column to another one,
+        add one more 1 lvl custom column,
+        check that 1st 1 lvl column is not available,
+        remove that custom column,
+        hide custom columns on aggregations or groupings presence,
+        show previous added custom columns
+        after all aggregations and groupings removed: add one more 1 lvl custom column 1`] = `
+"SELECT
+  orders1.*,
+  \\"products1\\".\\"Available amount\\" AS \\"Available amount (products1)\\",
+  \\"users1\\".\\"Username\\" AS \\"Username (users1)\\"
+FROM
+  \\"orders\\" \\"orders1\\"
+  LEFT JOIN \\"products\\" \\"products1\\" ON \\"orders1\\".\\"ProductID\\" = \\"products1\\".\\"ID\\"
+  LEFT JOIN \\"users\\" \\"users1\\" ON \\"orders1\\".\\"UserID\\" = \\"users1\\".\\"ID\\"
+LIMIT 2000
+"
+`;
+
+exports[`Custom Columns Builder should be able to
+        shows the add custom column placeholder,
+        add the 1 lvl custom column,
+        hide the add custom column placeholder,
+        update custom column to another one,
+        add one more 1 lvl custom column,
+        check that 1st 1 lvl column is not available,
+        remove that custom column,
+        hide custom columns on aggregations or groupings presence,
+        show previous added custom columns
+        after all aggregations and groupings removed: add the 1 lvl custom column 1`] = `
+"SELECT
+  orders1.*,
+  \\"products1\\".\\"Product name\\" AS \\"Product name (products1)\\"
+FROM
+  \\"orders\\" \\"orders1\\"
+  LEFT JOIN \\"products\\" \\"products1\\" ON \\"orders1\\".\\"ProductID\\" = \\"products1\\".\\"ID\\"
+LIMIT 2000
+"
+`;
+
+exports[`Custom Columns Builder should be able to
+        shows the add custom column placeholder,
+        add the 1 lvl custom column,
+        hide the add custom column placeholder,
+        update custom column to another one,
+        add one more 1 lvl custom column,
+        check that 1st 1 lvl column is not available,
+        remove that custom column,
+        hide custom columns on aggregations or groupings presence,
+        show previous added custom columns
+        after all aggregations and groupings removed: remove custom column 1`] = `
+"SELECT
+  orders1.*,
+  \\"users1\\".\\"Username\\" AS \\"Username (users1)\\"
+FROM
+  \\"orders\\" \\"orders1\\"
+  LEFT JOIN \\"users\\" \\"users1\\" ON \\"orders1\\".\\"UserID\\" = \\"users1\\".\\"ID\\"
+LIMIT 2000
+"
+`;
+
+exports[`Custom Columns Builder should be able to
+        shows the add custom column placeholder,
+        add the 1 lvl custom column,
+        hide the add custom column placeholder,
+        update custom column to another one,
+        add one more 1 lvl custom column,
+        check that 1st 1 lvl column is not available,
+        remove that custom column,
+        hide custom columns on aggregations or groupings presence,
+        show previous added custom columns
+        after all aggregations and groupings removed: update custom column to another one 1`] = `
+"SELECT
+  orders1.*,
+  \\"products1\\".\\"Available amount\\" AS \\"Available amount (products1)\\"
+FROM
+  \\"orders\\" \\"orders1\\"
+  LEFT JOIN \\"products\\" \\"products1\\" ON \\"orders1\\".\\"ProductID\\" = \\"products1\\".\\"ID\\"
+LIMIT 2000
+"
+`;

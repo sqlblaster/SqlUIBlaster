@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Groupings Builder should add a grouping 1`] = `
+"SELECT
+  \\"orders1\\".\\"Details\\" AS \\"Details (orders1)\\"
+FROM
+  \\"orders\\" \\"orders1\\"
+GROUP BY
+  \\"orders1\\".\\"Details\\"
+ORDER BY
+  \\"orders1\\".\\"Details\\" ASC
+LIMIT 2000
+"
+`;
+
+exports[`Groupings Builder should add foreign column grouping properly
+      and hide already added column 1`] = `
+"SELECT
+  \\"orders1\\".\\"Created At\\" AS \\"Created At (orders1)\\",
+  \\"currency1\\".\\"name\\" AS \\"name (currency1)\\"
+FROM
+  \\"orders\\" \\"orders1\\"
+  LEFT JOIN \\"products\\" \\"products1\\" ON \\"orders1\\".\\"ProductID\\" = \\"products1\\".\\"ID\\"
+  LEFT JOIN \\"currency\\" \\"currency1\\" ON \\"products1\\".\\"CurrencyID\\" = \\"currency1\\".\\"ID\\"
+GROUP BY
+  \\"orders1\\".\\"Created At\\",
+  \\"currency1\\".\\"name\\"
+ORDER BY
+  \\"orders1\\".\\"Created At\\" ASC,
+  \\"currency1\\".\\"name\\" ASC
+LIMIT 2000
+"
+`;
+
+exports[`Groupings Builder should remove grouping 1`] = `
+"SELECT
+  *
+FROM
+  \\"orders\\"
+LIMIT 2000
+"
+`;
+
+exports[`Groupings Builder should update grouping 1`] = `
+"SELECT
+  \\"orders1\\".\\"Created At\\" AS \\"Created At (orders1)\\"
+FROM
+  \\"orders\\" \\"orders1\\"
+GROUP BY
+  \\"orders1\\".\\"Created At\\"
+ORDER BY
+  \\"orders1\\".\\"Created At\\" ASC
+LIMIT 2000
+"
+`;

@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { DataSourceConstructor } from './App/DataSourceConstructor';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <DataSourceConstructor databaseSchema={{ tables:[] }}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

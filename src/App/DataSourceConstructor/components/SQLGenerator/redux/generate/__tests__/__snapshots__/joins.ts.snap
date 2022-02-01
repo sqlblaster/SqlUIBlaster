@@ -1,0 +1,269 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JOINs should be rendered nothing when there are 0 lvl column 1`] = `
+"
+    SELECT
+      \\"orders1\\".\\"ID\\" AS \\"ID (orders1)\\"
+    FROM \\"orders\\" \\"orders1\\"
+    GROUP BY \\"orders1\\".\\"ID\\"
+    ORDER BY \\"orders1\\".\\"ID\\" ASC"
+`;
+
+exports[`JOINs should be rendered nothing when there are 0 lvl columns 1`] = `
+"
+    SELECT
+      \\"orders1\\".\\"ID\\" AS \\"ID (orders1)\\",\\"orders1\\".\\"Created At\\" AS \\"Created At (orders1)\\",\\"orders1\\".\\"Details\\" AS \\"Details (orders1)\\",\\"orders1\\".\\"Quantity\\" AS \\"Quantity (orders1)\\"
+    FROM \\"orders\\" \\"orders1\\"
+    GROUP BY \\"orders1\\".\\"ID\\",\\"orders1\\".\\"Created At\\",\\"orders1\\".\\"Details\\",\\"orders1\\".\\"Quantity\\"
+    ORDER BY \\"orders1\\".\\"ID\\" ASC,\\"orders1\\".\\"Created At\\" ASC,\\"orders1\\".\\"Details\\" ASC,\\"orders1\\".\\"Quantity\\" ASC"
+`;
+
+exports[`JOINs should be rendered nothing when there is only selected table 1`] = `
+"
+    SELECT
+      *
+    FROM \\"orders\\" "
+`;
+
+exports[`JOINs should be rendered properly when there are
+      two 1 lvl columns on the same foreign table 1`] = `
+"
+    SELECT
+      \\"currency1\\".\\"name\\" AS \\"name (currency1)\\",\\"currency2\\".\\"ID\\" AS \\"ID (currency2)\\"
+    FROM \\"orders\\" \\"products1\\"
+  LEFT JOIN \\"currency\\" \\"currency1\\"
+  ON \\"products1\\".\\"CurrencyID\\" = \\"currency1\\".\\"ID\\"
+  LEFT JOIN \\"currency\\" \\"currency2\\"
+  ON \\"products1\\".\\"LocalCurrencyID\\" = \\"currency2\\".\\"ID\\"
+    GROUP BY \\"currency1\\".\\"name\\",\\"currency2\\".\\"ID\\"
+    ORDER BY \\"currency1\\".\\"name\\" ASC,\\"currency2\\".\\"ID\\" ASC"
+`;
+
+exports[`JOINs should be rendered properly when there are 1 lvl column 1`] = `
+"
+    SELECT
+      \\"products1\\".\\"ID\\" AS \\"ID (products1)\\"
+    FROM \\"orders\\" \\"orders1\\"
+  LEFT JOIN \\"products\\" \\"products1\\"
+  ON \\"orders1\\".\\"ProductID\\" = \\"products1\\".\\"ID\\"
+    GROUP BY \\"products1\\".\\"ID\\"
+    ORDER BY \\"products1\\".\\"ID\\" ASC"
+`;
+
+exports[`JOINs should be rendered properly when there are 1 lvl columns 1`] = `
+"
+    SELECT
+      \\"products1\\".\\"ID\\" AS \\"ID (products1)\\",\\"users1\\".\\"Username\\" AS \\"Username (users1)\\",\\"products1\\".\\"Product name\\" AS \\"Product name (products1)\\"
+    FROM \\"orders\\" \\"orders1\\"
+  LEFT JOIN \\"products\\" \\"products1\\"
+  ON \\"orders1\\".\\"ProductID\\" = \\"products1\\".\\"ID\\"
+  LEFT JOIN \\"users\\" \\"users1\\"
+  ON \\"orders1\\".\\"UserID\\" = \\"users1\\".\\"ID\\"
+    GROUP BY \\"products1\\".\\"ID\\",\\"users1\\".\\"Username\\",\\"products1\\".\\"Product name\\"
+    ORDER BY \\"products1\\".\\"ID\\" ASC,\\"users1\\".\\"Username\\" ASC,\\"products1\\".\\"Product name\\" ASC"
+`;
+
+exports[`JOINs should be rendered properly when there are 1 lvl self-referencing column 1`] = `
+"
+    SELECT
+      \\"users2\\".\\"Username\\" AS \\"Username (users2)\\"
+    FROM \\"orders\\" \\"users1\\"
+  LEFT JOIN \\"users\\" \\"users2\\"
+  ON \\"users1\\".\\"AdminID\\" = \\"users2\\".\\"ID\\"
+    GROUP BY \\"users2\\".\\"Username\\"
+    ORDER BY \\"users2\\".\\"Username\\" ASC"
+`;
+
+exports[`JOINs should be rendered properly when there are 1 lvl self-referencing columns 1`] = `
+"
+    SELECT
+      \\"users2\\".\\"Username\\" AS \\"Username (users2)\\",\\"users2\\".\\"ID\\" AS \\"ID (users2)\\",\\"users2\\".\\"AddressID\\" AS \\"AddressID (users2)\\"
+    FROM \\"orders\\" \\"users1\\"
+  LEFT JOIN \\"users\\" \\"users2\\"
+  ON \\"users1\\".\\"AdminID\\" = \\"users2\\".\\"ID\\"
+    GROUP BY \\"users2\\".\\"Username\\",\\"users2\\".\\"ID\\",\\"users2\\".\\"AddressID\\"
+    ORDER BY \\"users2\\".\\"Username\\" ASC,\\"users2\\".\\"ID\\" ASC,\\"users2\\".\\"AddressID\\" ASC"
+`;
+
+exports[`JOINs should be rendered properly when there are 1, 2 lvl columns 1`] = `
+"
+    SELECT
+      \\"products1\\".\\"ID\\" AS \\"ID (products1)\\",\\"users1\\".\\"ID\\" AS \\"ID (users1)\\"
+    FROM \\"orders\\" \\"orders1\\"
+  LEFT JOIN \\"products\\" \\"products1\\"
+  ON \\"orders1\\".\\"ProductID\\" = \\"products1\\".\\"ID\\"
+  LEFT JOIN \\"users\\" \\"users1\\"
+  ON \\"products1\\".\\"AddedBy\\" = \\"users1\\".\\"ID\\"
+    GROUP BY \\"products1\\".\\"ID\\",\\"users1\\".\\"ID\\"
+    ORDER BY \\"products1\\".\\"ID\\" ASC,\\"users1\\".\\"ID\\" ASC"
+`;
+
+exports[`JOINs should be rendered properly when there are 1, 2, 3 lvl
+      and 3 lvl self-referencing column 1`] = `
+"
+    SELECT
+      \\"users2\\".\\"Username\\" AS \\"Username (users2)\\",\\"users3\\".\\"ID\\" AS \\"ID (users3)\\",\\"users4\\".\\"ID\\" AS \\"ID (users4)\\"
+    FROM \\"orders\\" \\"users1\\"
+  LEFT JOIN \\"users\\" \\"users2\\"
+  ON \\"users1\\".\\"AdminID\\" = \\"users2\\".\\"ID\\"
+  LEFT JOIN \\"users\\" \\"users3\\"
+  ON \\"users2\\".\\"AdminID\\" = \\"users3\\".\\"ID\\"
+  LEFT JOIN \\"users\\" \\"users4\\"
+  ON \\"users3\\".\\"AdminID\\" = \\"users4\\".\\"ID\\"
+    GROUP BY \\"users2\\".\\"Username\\",\\"users3\\".\\"ID\\",\\"users4\\".\\"ID\\"
+    ORDER BY \\"users2\\".\\"Username\\" ASC,\\"users3\\".\\"ID\\" ASC,\\"users4\\".\\"ID\\" ASC"
+`;
+
+exports[`JOINs should be rendered properly when there are 1, 2, 3 lvl columns 1`] = `
+"
+    SELECT
+      \\"products1\\".\\"ID\\" AS \\"ID (products1)\\",\\"users1\\".\\"ID\\" AS \\"ID (users1)\\",\\"addresses1\\".\\"ID\\" AS \\"ID (addresses1)\\"
+    FROM \\"orders\\" \\"orders1\\"
+  LEFT JOIN \\"products\\" \\"products1\\"
+  ON \\"orders1\\".\\"ProductID\\" = \\"products1\\".\\"ID\\"
+  LEFT JOIN \\"users\\" \\"users1\\"
+  ON \\"products1\\".\\"AddedBy\\" = \\"users1\\".\\"ID\\"
+  LEFT JOIN \\"addresses\\" \\"addresses1\\"
+  ON \\"users1\\".\\"AddressID\\" = \\"addresses1\\".\\"ID\\"
+    GROUP BY \\"products1\\".\\"ID\\",\\"users1\\".\\"ID\\",\\"addresses1\\".\\"ID\\"
+    ORDER BY \\"products1\\".\\"ID\\" ASC,\\"users1\\".\\"ID\\" ASC,\\"addresses1\\".\\"ID\\" ASC"
+`;
+
+exports[`JOINs should be rendered properly when there are 2 lvl column 1`] = `
+"
+    SELECT
+      \\"users1\\".\\"ID\\" AS \\"ID (users1)\\"
+    FROM \\"orders\\" \\"orders1\\"
+  LEFT JOIN \\"products\\" \\"products1\\"
+  ON \\"orders1\\".\\"ProductID\\" = \\"products1\\".\\"ID\\"
+  LEFT JOIN \\"users\\" \\"users1\\"
+  ON \\"products1\\".\\"AddedBy\\" = \\"users1\\".\\"ID\\"
+    GROUP BY \\"users1\\".\\"ID\\"
+    ORDER BY \\"users1\\".\\"ID\\" ASC"
+`;
+
+exports[`JOINs should be rendered properly when there are 2 lvl columns 1`] = `
+"
+    SELECT
+      \\"users1\\".\\"ID\\" AS \\"ID (users1)\\",\\"users1\\".\\"Username\\" AS \\"Username (users1)\\",\\"addresses1\\".\\"ID\\" AS \\"ID (addresses1)\\"
+    FROM \\"orders\\" \\"orders1\\"
+  LEFT JOIN \\"products\\" \\"products1\\"
+  ON \\"orders1\\".\\"ProductID\\" = \\"products1\\".\\"ID\\"
+  LEFT JOIN \\"users\\" \\"users1\\"
+  ON \\"products1\\".\\"AddedBy\\" = \\"users1\\".\\"ID\\"
+  LEFT JOIN \\"users\\" \\"users2\\"
+  ON \\"orders1\\".\\"UserID\\" = \\"users2\\".\\"ID\\"
+  LEFT JOIN \\"addresses\\" \\"addresses1\\"
+  ON \\"users2\\".\\"AddressID\\" = \\"addresses1\\".\\"ID\\"
+    GROUP BY \\"users1\\".\\"ID\\",\\"users1\\".\\"Username\\",\\"addresses1\\".\\"ID\\"
+    ORDER BY \\"users1\\".\\"ID\\" ASC,\\"users1\\".\\"Username\\" ASC,\\"addresses1\\".\\"ID\\" ASC"
+`;
+
+exports[`JOINs should be rendered properly when there are 2 lvl self-referencing column 1`] = `
+"
+    SELECT
+      \\"users3\\".\\"ID\\" AS \\"ID (users3)\\"
+    FROM \\"orders\\" \\"users1\\"
+  LEFT JOIN \\"users\\" \\"users2\\"
+  ON \\"users1\\".\\"AdminID\\" = \\"users2\\".\\"ID\\"
+  LEFT JOIN \\"users\\" \\"users3\\"
+  ON \\"users2\\".\\"AdminID\\" = \\"users3\\".\\"ID\\"
+    GROUP BY \\"users3\\".\\"ID\\"
+    ORDER BY \\"users3\\".\\"ID\\" ASC"
+`;
+
+exports[`JOINs should be rendered properly when there are 2 lvl self-referencing columns 1`] = `
+"
+    SELECT
+      \\"users3\\".\\"ID\\" AS \\"ID (users3)\\",\\"users3\\".\\"Username\\" AS \\"Username (users3)\\",\\"users3\\".\\"AddressID\\" AS \\"AddressID (users3)\\"
+    FROM \\"orders\\" \\"users1\\"
+  LEFT JOIN \\"users\\" \\"users2\\"
+  ON \\"users1\\".\\"AdminID\\" = \\"users2\\".\\"ID\\"
+  LEFT JOIN \\"users\\" \\"users3\\"
+  ON \\"users2\\".\\"AdminID\\" = \\"users3\\".\\"ID\\"
+    GROUP BY \\"users3\\".\\"ID\\",\\"users3\\".\\"Username\\",\\"users3\\".\\"AddressID\\"
+    ORDER BY \\"users3\\".\\"ID\\" ASC,\\"users3\\".\\"Username\\" ASC,\\"users3\\".\\"AddressID\\" ASC"
+`;
+
+exports[`JOINs should be rendered properly when there are 2, 3 lvl columns 1`] = `
+"
+    SELECT
+      \\"users1\\".\\"ID\\" AS \\"ID (users1)\\",\\"addresses1\\".\\"ID\\" AS \\"ID (addresses1)\\"
+    FROM \\"orders\\" \\"orders1\\"
+  LEFT JOIN \\"products\\" \\"products1\\"
+  ON \\"orders1\\".\\"ProductID\\" = \\"products1\\".\\"ID\\"
+  LEFT JOIN \\"users\\" \\"users1\\"
+  ON \\"products1\\".\\"AddedBy\\" = \\"users1\\".\\"ID\\"
+  LEFT JOIN \\"addresses\\" \\"addresses1\\"
+  ON \\"users1\\".\\"AddressID\\" = \\"addresses1\\".\\"ID\\"
+    GROUP BY \\"users1\\".\\"ID\\",\\"addresses1\\".\\"ID\\"
+    ORDER BY \\"users1\\".\\"ID\\" ASC,\\"addresses1\\".\\"ID\\" ASC"
+`;
+
+exports[`JOINs should be rendered properly when there are 3 lvl column 1`] = `
+"
+    SELECT
+      \\"addresses1\\".\\"ID\\" AS \\"ID (addresses1)\\"
+    FROM \\"orders\\" \\"orders1\\"
+  LEFT JOIN \\"products\\" \\"products1\\"
+  ON \\"orders1\\".\\"ProductID\\" = \\"products1\\".\\"ID\\"
+  LEFT JOIN \\"users\\" \\"users1\\"
+  ON \\"products1\\".\\"AddedBy\\" = \\"users1\\".\\"ID\\"
+  LEFT JOIN \\"addresses\\" \\"addresses1\\"
+  ON \\"users1\\".\\"AddressID\\" = \\"addresses1\\".\\"ID\\"
+    GROUP BY \\"addresses1\\".\\"ID\\"
+    ORDER BY \\"addresses1\\".\\"ID\\" ASC"
+`;
+
+exports[`JOINs should be rendered properly when there are 3 lvl columns 1`] = `
+"
+    SELECT
+      \\"addresses1\\".\\"ID\\" AS \\"ID (addresses1)\\",\\"users2\\".\\"Username\\" AS \\"Username (users2)\\",\\"streets1\\".\\"Street name\\" AS \\"Street name (streets1)\\"
+    FROM \\"orders\\" \\"orders1\\"
+  LEFT JOIN \\"products\\" \\"products1\\"
+  ON \\"orders1\\".\\"ProductID\\" = \\"products1\\".\\"ID\\"
+  LEFT JOIN \\"users\\" \\"users1\\"
+  ON \\"products1\\".\\"AddedBy\\" = \\"users1\\".\\"ID\\"
+  LEFT JOIN \\"addresses\\" \\"addresses1\\"
+  ON \\"users1\\".\\"AddressID\\" = \\"addresses1\\".\\"ID\\"
+  LEFT JOIN \\"users\\" \\"users2\\"
+  ON \\"users1\\".\\"AdminID\\" = \\"users2\\".\\"ID\\"
+  LEFT JOIN \\"users\\" \\"users3\\"
+  ON \\"orders1\\".\\"UserID\\" = \\"users3\\".\\"ID\\"
+  LEFT JOIN \\"addresses\\" \\"addresses2\\"
+  ON \\"users3\\".\\"AddressID\\" = \\"addresses2\\".\\"ID\\"
+  LEFT JOIN \\"streets\\" \\"streets1\\"
+  ON \\"addresses2\\".\\"StreetID\\" = \\"streets1\\".\\"ID\\"
+    GROUP BY \\"addresses1\\".\\"ID\\",\\"users2\\".\\"Username\\",\\"streets1\\".\\"Street name\\"
+    ORDER BY \\"addresses1\\".\\"ID\\" ASC,\\"users2\\".\\"Username\\" ASC,\\"streets1\\".\\"Street name\\" ASC"
+`;
+
+exports[`JOINs should be rendered properly when there are 3 lvl self-referencing column 1`] = `
+"
+    SELECT
+      \\"users4\\".\\"ID\\" AS \\"ID (users4)\\"
+    FROM \\"orders\\" \\"users1\\"
+  LEFT JOIN \\"users\\" \\"users2\\"
+  ON \\"users1\\".\\"AdminID\\" = \\"users2\\".\\"ID\\"
+  LEFT JOIN \\"users\\" \\"users3\\"
+  ON \\"users2\\".\\"AdminID\\" = \\"users3\\".\\"ID\\"
+  LEFT JOIN \\"users\\" \\"users4\\"
+  ON \\"users3\\".\\"AdminID\\" = \\"users4\\".\\"ID\\"
+    GROUP BY \\"users4\\".\\"ID\\"
+    ORDER BY \\"users4\\".\\"ID\\" ASC"
+`;
+
+exports[`JOINs should be rendered properly when there are 3 lvl self-referencing columns 1`] = `
+"
+    SELECT
+      \\"users4\\".\\"ID\\" AS \\"ID (users4)\\",\\"users4\\".\\"Username\\" AS \\"Username (users4)\\",\\"users4\\".\\"AddressID\\" AS \\"AddressID (users4)\\"
+    FROM \\"orders\\" \\"users1\\"
+  LEFT JOIN \\"users\\" \\"users2\\"
+  ON \\"users1\\".\\"AdminID\\" = \\"users2\\".\\"ID\\"
+  LEFT JOIN \\"users\\" \\"users3\\"
+  ON \\"users2\\".\\"AdminID\\" = \\"users3\\".\\"ID\\"
+  LEFT JOIN \\"users\\" \\"users4\\"
+  ON \\"users3\\".\\"AdminID\\" = \\"users4\\".\\"ID\\"
+    GROUP BY \\"users4\\".\\"ID\\",\\"users4\\".\\"Username\\",\\"users4\\".\\"AddressID\\"
+    ORDER BY \\"users4\\".\\"ID\\" ASC,\\"users4\\".\\"Username\\" ASC,\\"users4\\".\\"AddressID\\" ASC"
+`;

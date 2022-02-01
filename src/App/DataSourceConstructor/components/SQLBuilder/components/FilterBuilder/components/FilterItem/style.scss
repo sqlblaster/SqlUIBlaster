@@ -1,0 +1,15 @@
+.filter-item {
+  display: flex;
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  transition: 0.3s;
+  margin: 5px 0px;
+
+  .operation {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: center;
+  }
+}

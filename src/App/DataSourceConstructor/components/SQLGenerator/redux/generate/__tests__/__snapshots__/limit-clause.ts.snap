@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LIMIT clause should be rendered when there is a rows limit 1`] = `
+"
+    SELECT
+      *
+    FROM \\"orders\\" 
+    LIMIT 100"
+`;
+
+exports[`LIMIT clause should render nothing when there is no rows limit 1`] = `
+"
+    SELECT
+      *
+    FROM \\"orders\\" "
+`;

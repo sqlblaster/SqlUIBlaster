@@ -1,0 +1,24 @@
+.sql-generator {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid gray;
+
+  span {
+    font-weight: bold;
+    font-size: 15px;
+    color: #33383E;
+    padding: 5px;
+  }
+
+  .query {
+    white-space: pre-wrap;
+    padding: 15px;
+    border: 1px solid #E8EAEC;
+    border-radius: 3px;
+    color: #44484C;
+    font-size: 11px;
+    font-family: monospace;
+    background: #F9FBFC;
+  }
+}

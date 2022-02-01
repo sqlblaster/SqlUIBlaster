@@ -1,0 +1,11 @@
+.filter-builder {
+  display: flex;
+  align-items: center;
+
+  .filters {
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 200px;
+  }
+}

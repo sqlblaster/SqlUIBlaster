@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`foreign column filter generator should render properly when there is picked record 1`] = `"\\"balance1\\".\\"account_id\\" = '59da5627-cb22-4b4e-884c-ad8cf94ebd4e'"`;
+
+exports[`foreign column filter generator should render properly when there is picked variable 1`] = `"\\"employee1\\".\\"country_id\\" = $2::uuid"`;

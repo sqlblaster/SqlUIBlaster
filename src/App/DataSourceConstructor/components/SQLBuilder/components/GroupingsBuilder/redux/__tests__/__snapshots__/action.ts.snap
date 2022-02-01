@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GroupingsBuilder action creators should return appropriate actions addGrouping 1`] = `
+Object {
+  "grouping": Grouping {
+    "id": "566af397-c08b-42b7-b10b-a4548e0a17ba",
+  },
+  "type": "ADD_GROUPING",
+}
+`;
+
+exports[`GroupingsBuilder action creators should return appropriate actions clearGroupings 1`] = `
+Object {
+  "type": "CLEAR_GROUPINGS",
+}
+`;
+
+exports[`GroupingsBuilder action creators should return appropriate actions removeGrouping 1`] = `
+Object {
+  "id": "1",
+  "type": "REMOVE_GROUPING",
+}
+`;
+
+exports[`GroupingsBuilder action creators should return appropriate actions updateGrouping 1`] = `
+Object {
+  "grouping": Grouping {
+    "id": "c3c15257-27e4-49bb-8803-4c9d87e7cd77",
+  },
+  "type": "UPDATE_GROUPING",
+}
+`;

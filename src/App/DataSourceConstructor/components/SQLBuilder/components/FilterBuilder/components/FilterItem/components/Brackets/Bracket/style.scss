@@ -1,0 +1,20 @@
+.bracket {
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  .bracket {
+    stroke: black;
+    stroke-width: 3px;
+    fill: none;
+
+    &.dashed {
+      opacity: 0.2;
+      stroke-dasharray: 8, 5;
+    }
+  }
+}

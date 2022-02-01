@@ -1,0 +1,25 @@
+.row-limit-builder {
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    font-size: 9px;
+    color: #77828d;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+  }
+
+  .row-limits {
+    display: flex;
+
+    & > .row-limit:first-child {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    & > .row-limit:last-child {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+}

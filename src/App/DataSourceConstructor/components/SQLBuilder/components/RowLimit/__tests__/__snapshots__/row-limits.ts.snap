@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`row limits list should match snapshot 1`] = `
+Array [
+  null,
+  1,
+  10,
+  25,
+  100,
+  1000,
+  2000,
+]
+`;

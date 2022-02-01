@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Foreign field operations should render proper sql query on:
+      - an item selected
+      - a variable selected after an item
+      - an item selected after variable,
+      should not allow save filter on empty selection: a variable selected after an item 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"UserID\\" = $1::uuid
+LIMIT 2000
+"
+`;
+
+exports[`Foreign field operations should render proper sql query on:
+      - an item selected
+      - a variable selected after an item
+      - an item selected after variable,
+      should not allow save filter on empty selection: a variable selected after an item filter description 1`] = `"UserIDisVariableIconUSER"`;
+
+exports[`Foreign field operations should render proper sql query on:
+      - an item selected
+      - a variable selected after an item
+      - an item selected after variable,
+      should not allow save filter on empty selection: an item selected 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"UserID\\" = '1'
+LIMIT 2000
+"
+`;
+
+exports[`Foreign field operations should render proper sql query on:
+      - an item selected
+      - a variable selected after an item
+      - an item selected after variable,
+      should not allow save filter on empty selection: an item selected after variable 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"UserID\\" = '2'
+LIMIT 2000
+"
+`;
+
+exports[`Foreign field operations should render proper sql query on:
+      - an item selected
+      - a variable selected after an item
+      - an item selected after variable,
+      should not allow save filter on empty selection: an item selected after variable filter description 1`] = `"UserIDisKevin"`;
+
+exports[`Foreign field operations should render proper sql query on:
+      - an item selected
+      - a variable selected after an item
+      - an item selected after variable,
+      should not allow save filter on empty selection: an item selected filter description 1`] = `"UserIDisDavid"`;

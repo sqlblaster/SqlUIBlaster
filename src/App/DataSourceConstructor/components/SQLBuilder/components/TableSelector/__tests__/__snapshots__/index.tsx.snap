@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableSelector should change the selected table when one is picked 1`] = `
+"SELECT
+  *
+FROM
+  \\"orders\\"
+LIMIT 2000
+"
+`;

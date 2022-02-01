@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FROM clause should render * when there is no aggregations and groupings 1`] = `
+"
+    SELECT
+      *
+    FROM \\"orders\\" "
+`;
+
+exports[`FROM clause should render groupings when there is only groupings 1`] = `
+"
+    SELECT
+      \\"balance1\\".\\"amount\\" AS \\"amount (balance1)\\",\\"balance1\\".\\"name\\" AS \\"name (balance1)\\"
+    FROM \\"orders\\" \\"balance1\\"
+    GROUP BY \\"balance1\\".\\"amount\\",\\"balance1\\".\\"name\\"
+    ORDER BY \\"balance1\\".\\"amount\\" ASC,\\"balance1\\".\\"name\\" ASC"
+`;

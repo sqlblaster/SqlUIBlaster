@@ -1,0 +1,11 @@
+.remove-button {
+  margin-left: 5px;
+  font-size: 17px !important;
+  fill: #C8CED3 !important;
+  opacity: 0.5;
+  cursor: pointer;
+  
+  &:hover {
+    opacity: 1;
+  }
+}

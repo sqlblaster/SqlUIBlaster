@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`filterColumns should filter by filter callback
+    should not remove foreign columns 1`] = `
+Array [
+  Column {
+    "isPrimaryKey": false,
+    "name": "FirstName",
+    "type": "string",
+  },
+  Column {
+    "_foreignTableName": "users",
+    "foreignModelName": "Users",
+    "isPrimaryKey": false,
+    "name": "UserID",
+    "type": "number",
+  },
+  Column {
+    "isPrimaryKey": false,
+    "name": "number of name",
+    "type": "number",
+  },
+]
+`;
+
+exports[`getNewColumnBranch should return new ColumnBranch with defined columnName and type 1`] = `
+Object {
+  "_foreignTableName": undefined,
+  "_lastColumn": Object {
+    "_foreignTableName": undefined,
+    "_lastColumn": undefined,
+    "columnName": "username",
+    "foreignColumn": undefined,
+    "foreignModelName": undefined,
+    "foreignTableName": undefined,
+    "tableName": "Users",
+    "type": "number",
+  },
+  "columnName": "",
+  "foreignColumn": Object {
+    "_foreignTableName": undefined,
+    "_lastColumn": undefined,
+    "columnName": "",
+    "foreignColumn": Object {
+      "_foreignTableName": undefined,
+      "_lastColumn": undefined,
+      "columnName": "username",
+      "foreignColumn": undefined,
+      "foreignModelName": undefined,
+      "foreignTableName": undefined,
+      "tableName": "Users",
+      "type": "number",
+    },
+    "foreignModelName": undefined,
+    "foreignTableName": undefined,
+    "tableName": "",
+    "type": undefined,
+  },
+  "foreignModelName": undefined,
+  "foreignTableName": undefined,
+  "tableName": "",
+  "type": undefined,
+}
+`;
+
+exports[`getRootTableBranch should return instance of ColumnBranch with specified tableName 1`] = `
+Object {
+  "_foreignTableName": undefined,
+  "_lastColumn": undefined,
+  "columnName": "",
+  "foreignColumn": undefined,
+  "foreignModelName": undefined,
+  "foreignTableName": undefined,
+  "tableName": "Users",
+  "type": undefined,
+}
+`;
+
+exports[`sortInOrderForeignColumnsBelow should sort in order foreign columns in the bottom 1`] = `
+Array [
+  Column {
+    "isPrimaryKey": true,
+    "name": "ID",
+  },
+  Column {
+    "isPrimaryKey": false,
+    "name": "name",
+  },
+  Column {
+    "_foreignTableName": "products",
+    "foreignModelName": "Products",
+    "isPrimaryKey": false,
+    "name": "ProductID",
+  },
+  Column {
+    "_foreignTableName": "users",
+    "foreignModelName": "Users",
+    "isPrimaryKey": false,
+    "name": "AddedBy",
+  },
+]
+`;

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WHERE clause should render both open and closing brackets 1`] = `
+"
+    WHERE  ((\\"orders1\\".\\"Details\\"::text = 'Detail1'))"
+`;
+
+exports[`WHERE clause should render complex brackets 1`] = `
+"
+    WHERE  ((\\"orders1\\".\\"Details\\"::text = 'Detail1' or \\"orders1\\".\\"Details\\"::text = 'Detail2') and \\"orders1\\".\\"Quantity\\" > 10) and (\\"orders1\\".\\"Details\\"::text = 'Detail1' and (\\"orders1\\".\\"Quantity\\" < 5 or \\"orders1\\".\\"Quantity\\" IS NULL))"
+`;
+
+exports[`WHERE clause should render nothing when there are no filters 1`] = `""`;
+
+exports[`WHERE clause should render open bracket and closing bracket 1`] = `
+"
+    WHERE  (\\"orders1\\".\\"Details\\"::text = 'Detail1')"
+`;

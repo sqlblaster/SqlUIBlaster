@@ -1,0 +1,17 @@
+.aggregations-builder {
+  display: flex;
+  align-items: center;
+
+  .aggregations {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 200px;
+
+    .and-operator {
+      font-size: 10px;
+      padding: 2px;
+    }
+  }
+}

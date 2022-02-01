@@ -1,0 +1,401 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`String operations should render proper sql query for:
+      - primary fields,
+      - enum fields,
+      - case insensitive cases,
+      should check the proper filter description render,
+      should check the variable pick and from variable to enum pick
+  : 'Contains' string operator 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+  LEFT JOIN \\"products\\" \\"products1\\" ON \\"orders1\\".\\"ProductID\\" = \\"products1\\".\\"ID\\"
+WHERE
+  lower(\\"products1\\".\\"Product name\\"::text)
+  LIKE concat('%', lower('Candy'), '%')
+LIMIT 2000
+"
+`;
+
+exports[`String operations should render proper sql query for:
+      - primary fields,
+      - enum fields,
+      - case insensitive cases,
+      should check the proper filter description render,
+      should check the variable pick and from variable to enum pick
+  : 'Does not contain' string operator 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+  LEFT JOIN \\"products\\" \\"products1\\" ON \\"orders1\\".\\"ProductID\\" = \\"products1\\".\\"ID\\"
+WHERE
+  lower(\\"products1\\".\\"Product name\\"::text)
+  NOT LIKE concat('%', lower('Candy'), '%')
+LIMIT 2000
+"
+`;
+
+exports[`String operations should render proper sql query for:
+      - primary fields,
+      - enum fields,
+      - case insensitive cases,
+      should check the proper filter description render,
+      should check the variable pick and from variable to enum pick
+  : 'Ends with' string operator 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+  LEFT JOIN \\"products\\" \\"products1\\" ON \\"orders1\\".\\"ProductID\\" = \\"products1\\".\\"ID\\"
+WHERE
+  lower(\\"products1\\".\\"Product name\\"::text)
+  LIKE concat('%', lower('Candy'))
+LIMIT 2000
+"
+`;
+
+exports[`String operations should render proper sql query for:
+      - primary fields,
+      - enum fields,
+      - case insensitive cases,
+      should check the proper filter description render,
+      should check the variable pick and from variable to enum pick
+  : 'Is empty' string operator 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+  LEFT JOIN \\"products\\" \\"products1\\" ON \\"orders1\\".\\"ProductID\\" = \\"products1\\".\\"ID\\"
+WHERE
+  \\"products1\\".\\"Product name\\" IS NULL
+LIMIT 2000
+"
+`;
+
+exports[`String operations should render proper sql query for:
+      - primary fields,
+      - enum fields,
+      - case insensitive cases,
+      should check the proper filter description render,
+      should check the variable pick and from variable to enum pick
+  : 'Is not empty' string operator 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+  LEFT JOIN \\"products\\" \\"products1\\" ON \\"orders1\\".\\"ProductID\\" = \\"products1\\".\\"ID\\"
+WHERE
+  \\"products1\\".\\"Product name\\" IS NOT NULL
+LIMIT 2000
+"
+`;
+
+exports[`String operations should render proper sql query for:
+      - primary fields,
+      - enum fields,
+      - case insensitive cases,
+      should check the proper filter description render,
+      should check the variable pick and from variable to enum pick
+  : 'Is not' string operator 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+  LEFT JOIN \\"products\\" \\"products1\\" ON \\"orders1\\".\\"ProductID\\" = \\"products1\\".\\"ID\\"
+WHERE
+  \\"products1\\".\\"Product name\\"::text <> 'Candy'
+LIMIT 2000
+"
+`;
+
+exports[`String operations should render proper sql query for:
+      - primary fields,
+      - enum fields,
+      - case insensitive cases,
+      should check the proper filter description render,
+      should check the variable pick and from variable to enum pick
+  : 'Starts with' string operator 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+  LEFT JOIN \\"products\\" \\"products1\\" ON \\"orders1\\".\\"ProductID\\" = \\"products1\\".\\"ID\\"
+WHERE
+  lower(\\"products1\\".\\"Product name\\"::text)
+  LIKE concat(lower('Candy'), '%')
+LIMIT 2000
+"
+`;
+
+exports[`String operations should render proper sql query for:
+      - primary fields,
+      - enum fields,
+      - case insensitive cases,
+      should check the proper filter description render,
+      should check the variable pick and from variable to enum pick
+  : Enum string operation 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Details\\"::text = 'Detail1'
+LIMIT 2000
+"
+`;
+
+exports[`String operations should render proper sql query for:
+      - primary fields,
+      - enum fields,
+      - case insensitive cases,
+      should check the proper filter description render,
+      should check the variable pick and from variable to enum pick
+  : Enum string operation with second enum's value 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Details\\"::text = 'Detail2'
+LIMIT 2000
+"
+`;
+
+exports[`String operations should render proper sql query for:
+      - primary fields,
+      - enum fields,
+      - case insensitive cases,
+      should check the proper filter description render,
+      should check the variable pick and from variable to enum pick
+  : Enum value picked after variable pick 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Details\\"::text = 'Detail2'
+LIMIT 2000
+"
+`;
+
+exports[`String operations should render proper sql query for:
+      - primary fields,
+      - enum fields,
+      - case insensitive cases,
+      should check the proper filter description render,
+      should check the variable pick and from variable to enum pick
+  : Variable picked after the enum value pick 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Details\\"::text = $2::text
+LIMIT 2000
+"
+`;
+
+exports[`String operations should render proper sql query for:
+      - primary fields,
+      - enum fields,
+      - case insensitive cases,
+      should check the proper filter description render,
+      should check the variable pick and from variable to enum pick
+  : case sensitive 'Contains' string operator 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+  LEFT JOIN \\"products\\" \\"products1\\" ON \\"orders1\\".\\"ProductID\\" = \\"products1\\".\\"ID\\"
+WHERE
+  \\"products1\\".\\"Product name\\"::text LIKE concat('%', 'Candy', '%')
+LIMIT 2000
+"
+`;
+
+exports[`String operations should render proper sql query for:
+      - primary fields,
+      - enum fields,
+      - case insensitive cases,
+      should check the proper filter description render,
+      should check the variable pick and from variable to enum pick
+  : case sensitive 'Does not contain' string operator 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+  LEFT JOIN \\"products\\" \\"products1\\" ON \\"orders1\\".\\"ProductID\\" = \\"products1\\".\\"ID\\"
+WHERE
+  \\"products1\\".\\"Product name\\"::text NOT LIKE concat('%', 'Candy', '%')
+LIMIT 2000
+"
+`;
+
+exports[`String operations should render proper sql query for:
+      - primary fields,
+      - enum fields,
+      - case insensitive cases,
+      should check the proper filter description render,
+      should check the variable pick and from variable to enum pick
+  : case sensitive 'Ends with' string operator 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+  LEFT JOIN \\"products\\" \\"products1\\" ON \\"orders1\\".\\"ProductID\\" = \\"products1\\".\\"ID\\"
+WHERE
+  \\"products1\\".\\"Product name\\"::text LIKE concat('%', 'Candy')
+LIMIT 2000
+"
+`;
+
+exports[`String operations should render proper sql query for:
+      - primary fields,
+      - enum fields,
+      - case insensitive cases,
+      should check the proper filter description render,
+      should check the variable pick and from variable to enum pick
+  : case sensitive 'Starts with' string operator 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+  LEFT JOIN \\"products\\" \\"products1\\" ON \\"orders1\\".\\"ProductID\\" = \\"products1\\".\\"ID\\"
+WHERE
+  \\"products1\\".\\"Product name\\"::text LIKE concat('Candy', '%')
+LIMIT 2000
+"
+`;
+
+exports[`String operations should render proper sql query for:
+      - primary fields,
+      - enum fields,
+      - case insensitive cases,
+      should check the proper filter description render,
+      should check the variable pick and from variable to enum pick
+  : default string operator 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+  LEFT JOIN \\"products\\" \\"products1\\" ON \\"orders1\\".\\"ProductID\\" = \\"products1\\".\\"ID\\"
+WHERE
+  \\"products1\\".\\"Product name\\"::text = 'Candy'
+LIMIT 2000
+"
+`;
+
+exports[`String operations should render proper sql query for:
+      - primary fields,
+      - enum fields,
+      - case insensitive cases,
+      should check the proper filter description render,
+      should check the variable pick and from variable to enum pick
+  : filter description for 'Contains' date operator 1`] = `"ProductIDShareIconProduct namecontainsCandy"`;
+
+exports[`String operations should render proper sql query for:
+      - primary fields,
+      - enum fields,
+      - case insensitive cases,
+      should check the proper filter description render,
+      should check the variable pick and from variable to enum pick
+  : filter description for 'Contains' date operator 2`] = `"ProductIDShareIconProduct namecontainsCandy"`;
+
+exports[`String operations should render proper sql query for:
+      - primary fields,
+      - enum fields,
+      - case insensitive cases,
+      should check the proper filter description render,
+      should check the variable pick and from variable to enum pick
+  : filter description for 'Does not contain' date operator 1`] = `"ProductIDShareIconProduct namedoes not containCandy"`;
+
+exports[`String operations should render proper sql query for:
+      - primary fields,
+      - enum fields,
+      - case insensitive cases,
+      should check the proper filter description render,
+      should check the variable pick and from variable to enum pick
+  : filter description for 'Does not contain' date operator 2`] = `"ProductIDShareIconProduct namedoes not containCandy"`;
+
+exports[`String operations should render proper sql query for:
+      - primary fields,
+      - enum fields,
+      - case insensitive cases,
+      should check the proper filter description render,
+      should check the variable pick and from variable to enum pick
+  : filter description for 'Ends with' date operator 1`] = `"ProductIDShareIconProduct nameends withCandy"`;
+
+exports[`String operations should render proper sql query for:
+      - primary fields,
+      - enum fields,
+      - case insensitive cases,
+      should check the proper filter description render,
+      should check the variable pick and from variable to enum pick
+  : filter description for 'Ends with' date operator 2`] = `"ProductIDShareIconProduct nameends withCandy"`;
+
+exports[`String operations should render proper sql query for:
+      - primary fields,
+      - enum fields,
+      - case insensitive cases,
+      should check the proper filter description render,
+      should check the variable pick and from variable to enum pick
+  : filter description for 'Is empty' date operator 1`] = `"ProductIDShareIconProduct nameis empty"`;
+
+exports[`String operations should render proper sql query for:
+      - primary fields,
+      - enum fields,
+      - case insensitive cases,
+      should check the proper filter description render,
+      should check the variable pick and from variable to enum pick
+  : filter description for 'Is not empty' date operator 1`] = `"ProductIDShareIconProduct nameis not empty"`;
+
+exports[`String operations should render proper sql query for:
+      - primary fields,
+      - enum fields,
+      - case insensitive cases,
+      should check the proper filter description render,
+      should check the variable pick and from variable to enum pick
+  : filter description for 'Is not' date operator 1`] = `"ProductIDShareIconProduct nameis notCandy"`;
+
+exports[`String operations should render proper sql query for:
+      - primary fields,
+      - enum fields,
+      - case insensitive cases,
+      should check the proper filter description render,
+      should check the variable pick and from variable to enum pick
+  : filter description for 'Is' date operator 1`] = `"ProductIDShareIconProduct nameisCandy"`;
+
+exports[`String operations should render proper sql query for:
+      - primary fields,
+      - enum fields,
+      - case insensitive cases,
+      should check the proper filter description render,
+      should check the variable pick and from variable to enum pick
+  : filter description for 'Starts with' date operator 1`] = `"ProductIDShareIconProduct namestarts withCandy"`;
+
+exports[`String operations should render proper sql query for:
+      - primary fields,
+      - enum fields,
+      - case insensitive cases,
+      should check the proper filter description render,
+      should check the variable pick and from variable to enum pick
+  : filter description for 'Starts with' date operator 2`] = `"ProductIDShareIconProduct namestarts withCandy"`;
+
+exports[`String operations should render proper sql query for:
+      - primary fields,
+      - enum fields,
+      - case insensitive cases,
+      should check the proper filter description render,
+      should check the variable pick and from variable to enum pick
+  : valid variable is drawn correctly 1`] = `"DetailsisVariableIconOrder details"`;
+
+exports[`String operations should render proper sql query for:
+      - primary fields,
+      - enum fields,
+      - case insensitive cases,
+      should check the proper filter description render,
+      should check the variable pick and from variable to enum pick
+  : valid variable is selected 1`] = `"VariableIconOrder details"`;

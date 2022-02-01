@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Orders Builder should add an order 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+ORDER BY
+  \\"orders1\\".\\"Details\\" ASC
+LIMIT 2000
+"
+`;
+
+exports[`Orders Builder should add foreign column order properly
+      and hide already added column 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+  LEFT JOIN \\"products\\" \\"products1\\" ON \\"orders1\\".\\"ProductID\\" = \\"products1\\".\\"ID\\"
+  LEFT JOIN \\"currency\\" \\"currency1\\" ON \\"products1\\".\\"CurrencyID\\" = \\"currency1\\".\\"ID\\"
+ORDER BY
+  \\"orders1\\".\\"Created At\\" ASC,
+  \\"currency1\\".\\"name\\" ASC
+LIMIT 2000
+"
+`;
+
+exports[`Orders Builder should remove all orders except the grouping columns
+      when a grouping added and show only picked grouping column
+      available for order column 1`] = `
+"SELECT
+  \\"orders1\\".\\"Details\\" AS \\"Details (orders1)\\"
+FROM
+  \\"orders\\" \\"orders1\\"
+GROUP BY
+  \\"orders1\\".\\"Details\\"
+ORDER BY
+  \\"orders1\\".\\"Details\\" DESC
+LIMIT 2000
+"
+`;
+
+exports[`Orders Builder should update order 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+ORDER BY
+  \\"orders1\\".\\"Created At\\" ASC
+LIMIT 2000
+"
+`;

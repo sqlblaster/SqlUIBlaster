@@ -1,0 +1,32 @@
+.date-mutator {
+  border: 1px solid #EBECED;
+  border-radius: 5px;
+
+  .common-padding {
+    padding: 10px;
+  }
+
+  .title-and-operator {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .title {
+      margin-right: 20px;
+    }
+  }
+
+  .mutator-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+  }
+
+  hr {
+    margin: 0px;
+    background: #EBECED;
+    height: 1px;
+    border: none;
+  }
+}

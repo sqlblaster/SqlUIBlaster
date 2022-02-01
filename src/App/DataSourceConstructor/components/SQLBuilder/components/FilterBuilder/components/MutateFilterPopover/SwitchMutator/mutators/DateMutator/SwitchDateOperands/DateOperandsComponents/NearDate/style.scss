@@ -1,0 +1,31 @@
+.near-date {
+  display: flex;
+  padding: 10px;
+
+  .include-current-date {
+    span {
+      font-size: 12px;
+    }
+  }
+
+  input.shift-amount {
+    border: 1px solid #b19ecc;
+    border-radius: 4px;
+    margin: 0px 10px;
+    max-width: 40px;
+    padding: 0px 5px;
+    text-align: end;
+    font-size: 13px;
+    color: #33383F;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    &:focus {
+      outline-width: 0;
+    }
+  }
+}

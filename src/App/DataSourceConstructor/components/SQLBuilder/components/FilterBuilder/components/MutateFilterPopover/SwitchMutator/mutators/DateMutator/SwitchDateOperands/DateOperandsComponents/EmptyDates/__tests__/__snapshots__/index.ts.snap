@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`'Is empty' and 'Is not empty' date operations should render proper sql query,
+      should check the proper filter description render
+  : 'Is empty' operator 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Created At\\" IS NULL
+LIMIT 2000
+"
+`;
+
+exports[`'Is empty' and 'Is not empty' date operations should render proper sql query,
+      should check the proper filter description render
+  : 'Is not empty' operator 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Created At\\" IS NOT NULL
+LIMIT 2000
+"
+`;
+
+exports[`'Is empty' and 'Is not empty' date operations should render proper sql query,
+      should check the proper filter description render
+  : filter description for 'Is empty' date operator 1`] = `"Created Atis empty"`;
+
+exports[`'Is empty' and 'Is not empty' date operations should render proper sql query,
+      should check the proper filter description render
+  : filter description for 'Is not empty' date operator 1`] = `"Created Atis not empty"`;

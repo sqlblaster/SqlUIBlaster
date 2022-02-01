@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FROM clause should render nothing when there is no selected table 1`] = `""`;
+
+exports[`FROM clause should render properly when there is selected table 1`] = `
+"
+    SELECT
+      *
+    FROM \\"orders\\" "
+`;
+
+exports[`FROM clause should render properly when there is selected table 2`] = `
+"
+    SELECT
+      *
+    FROM \\"users\\" "
+`;

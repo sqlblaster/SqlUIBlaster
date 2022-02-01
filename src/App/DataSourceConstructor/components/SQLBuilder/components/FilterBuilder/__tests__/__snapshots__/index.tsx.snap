@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filters Builder should be able to
+        shows the add filter placeholder,
+        add a filter,
+        hide the add filter placeholder,
+        update filter to the different filter type,
+        add one more filter,
+        hide logic operator before first operation,
+        change logic operator's value,
+        remove that filter 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Quantity\\" = 0
+LIMIT 2000
+"
+`;
+
+exports[`Filters Builder should be able to
+        shows the add filter placeholder,
+        add a filter,
+        hide the add filter placeholder,
+        update filter to the different filter type,
+        add one more filter,
+        hide logic operator before first operation,
+        change logic operator's value,
+        remove that filter 2`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Days', (\\"orders1\\".\\"Created At\\")::timestamp) >= date_trunc('Days', (now() + interval '-30 Days')::timestamp)
+  AND date_trunc('Days', (\\"orders1\\".\\"Created At\\")::timestamp) <= date_trunc('Days', (now() + interval '-1 Days')::timestamp)
+LIMIT 2000
+"
+`;
+
+exports[`Filters Builder should be able to
+        shows the add filter placeholder,
+        add a filter,
+        hide the add filter placeholder,
+        update filter to the different filter type,
+        add one more filter,
+        hide logic operator before first operation,
+        change logic operator's value,
+        remove that filter 3`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Days', (\\"orders1\\".\\"Created At\\")::timestamp) >= date_trunc('Days', (now() + interval '-30 Days')::timestamp)
+  AND date_trunc('Days', (\\"orders1\\".\\"Created At\\")::timestamp) <= date_trunc('Days', (now() + interval '-1 Days')::timestamp)
+  AND \\"orders1\\".\\"Details\\"::text = 'Detail1'
+LIMIT 2000
+"
+`;
+
+exports[`Filters Builder should be able to
+        shows the add filter placeholder,
+        add a filter,
+        hide the add filter placeholder,
+        update filter to the different filter type,
+        add one more filter,
+        hide logic operator before first operation,
+        change logic operator's value,
+        remove that filter 4`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  date_trunc('Days', (\\"orders1\\".\\"Created At\\")::timestamp) >= date_trunc('Days', (now() + interval '-30 Days')::timestamp)
+  AND date_trunc('Days', (\\"orders1\\".\\"Created At\\")::timestamp) <= date_trunc('Days', (now() + interval '-1 Days')::timestamp)
+  OR \\"orders1\\".\\"Details\\"::text = 'Detail1'
+LIMIT 2000
+"
+`;
+
+exports[`Filters Builder should be able to
+        shows the add filter placeholder,
+        add a filter,
+        hide the add filter placeholder,
+        update filter to the different filter type,
+        add one more filter,
+        hide logic operator before first operation,
+        change logic operator's value,
+        remove that filter 5`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Details\\"::text = 'Detail1'
+LIMIT 2000
+"
+`;

@@ -1,0 +1,273 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Number operations should render proper sql query on all operators:
+      - with default operand's value
+      - with certain operand's value,
+      should not allow non-number operands,
+      should allow non-integer operands
+  : 'Between' number operator 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Quantity\\" >= 0
+  AND \\"orders1\\".\\"Quantity\\" <= 0
+LIMIT 2000
+"
+`;
+
+exports[`Number operations should render proper sql query on all operators:
+      - with default operand's value
+      - with certain operand's value,
+      should not allow non-number operands,
+      should allow non-integer operands
+  : 'Between' number operator with both operands set 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Quantity\\" >= 2
+  AND \\"orders1\\".\\"Quantity\\" <= 5
+LIMIT 2000
+"
+`;
+
+exports[`Number operations should render proper sql query on all operators:
+      - with default operand's value
+      - with certain operand's value,
+      should not allow non-number operands,
+      should allow non-integer operands
+  : 'Between' number operator with second operand set 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Quantity\\" >= 0
+  AND \\"orders1\\".\\"Quantity\\" <= 5
+LIMIT 2000
+"
+`;
+
+exports[`Number operations should render proper sql query on all operators:
+      - with default operand's value
+      - with certain operand's value,
+      should not allow non-number operands,
+      should allow non-integer operands
+  : 'Equal to' number operator with certain operand's value 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Quantity\\" = 123.123
+LIMIT 2000
+"
+`;
+
+exports[`Number operations should render proper sql query on all operators:
+      - with default operand's value
+      - with certain operand's value,
+      should not allow non-number operands,
+      should allow non-integer operands
+  : 'Greater than or equal to' number operator 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Quantity\\" >= 0
+LIMIT 2000
+"
+`;
+
+exports[`Number operations should render proper sql query on all operators:
+      - with default operand's value
+      - with certain operand's value,
+      should not allow non-number operands,
+      should allow non-integer operands
+  : 'Greater than' number operator 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Quantity\\" > 0
+LIMIT 2000
+"
+`;
+
+exports[`Number operations should render proper sql query on all operators:
+      - with default operand's value
+      - with certain operand's value,
+      should not allow non-number operands,
+      should allow non-integer operands
+  : 'Is empty' number operator 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Quantity\\" IS NULL
+LIMIT 2000
+"
+`;
+
+exports[`Number operations should render proper sql query on all operators:
+      - with default operand's value
+      - with certain operand's value,
+      should not allow non-number operands,
+      should allow non-integer operands
+  : 'Is not empty' number operator 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Quantity\\" IS NOT NULL
+LIMIT 2000
+"
+`;
+
+exports[`Number operations should render proper sql query on all operators:
+      - with default operand's value
+      - with certain operand's value,
+      should not allow non-number operands,
+      should allow non-integer operands
+  : 'Less than or equal to' number operator 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Quantity\\" <= 0
+LIMIT 2000
+"
+`;
+
+exports[`Number operations should render proper sql query on all operators:
+      - with default operand's value
+      - with certain operand's value,
+      should not allow non-number operands,
+      should allow non-integer operands
+  : 'Less than' number operator 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Quantity\\" < 0
+LIMIT 2000
+"
+`;
+
+exports[`Number operations should render proper sql query on all operators:
+      - with default operand's value
+      - with certain operand's value,
+      should not allow non-number operands,
+      should allow non-integer operands
+  : 'Not equal to' number operator 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Quantity\\" <> 0
+LIMIT 2000
+"
+`;
+
+exports[`Number operations should render proper sql query on all operators:
+      - with default operand's value
+      - with certain operand's value,
+      should not allow non-number operands,
+      should allow non-integer operands
+  : default number operator 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Quantity\\" = 0
+LIMIT 2000
+"
+`;
+
+exports[`Number operations should render proper sql query on all operators:
+      - with default operand's value
+      - with certain operand's value,
+      should not allow non-number operands,
+      should allow non-integer operands
+  : filter description for 'Between' number operator 1`] = `"Quantitybetween0and0"`;
+
+exports[`Number operations should render proper sql query on all operators:
+      - with default operand's value
+      - with certain operand's value,
+      should not allow non-number operands,
+      should allow non-integer operands
+  : filter description for 'Between' number operator with both operands set 1`] = `"Quantitybetween2and5"`;
+
+exports[`Number operations should render proper sql query on all operators:
+      - with default operand's value
+      - with certain operand's value,
+      should not allow non-number operands,
+      should allow non-integer operands
+  : filter description for 'Between' number operator with second operand set 1`] = `"Quantitybetween0and5"`;
+
+exports[`Number operations should render proper sql query on all operators:
+      - with default operand's value
+      - with certain operand's value,
+      should not allow non-number operands,
+      should allow non-integer operands
+  : filter description for 'Equal to' number operator 1`] = `"Quantityis equal to0"`;
+
+exports[`Number operations should render proper sql query on all operators:
+      - with default operand's value
+      - with certain operand's value,
+      should not allow non-number operands,
+      should allow non-integer operands
+  : filter description for 'Greater than or equal to' number operator 1`] = `"Quantityis greater than or equal to0"`;
+
+exports[`Number operations should render proper sql query on all operators:
+      - with default operand's value
+      - with certain operand's value,
+      should not allow non-number operands,
+      should allow non-integer operands
+  : filter description for 'Greater than' number operator 1`] = `"Quantityis greater than0"`;
+
+exports[`Number operations should render proper sql query on all operators:
+      - with default operand's value
+      - with certain operand's value,
+      should not allow non-number operands,
+      should allow non-integer operands
+  : filter description for 'Is empty' number operator 1`] = `"Quantityis empty"`;
+
+exports[`Number operations should render proper sql query on all operators:
+      - with default operand's value
+      - with certain operand's value,
+      should not allow non-number operands,
+      should allow non-integer operands
+  : filter description for 'Is not empty' number operator 1`] = `"Quantityis not empty"`;
+
+exports[`Number operations should render proper sql query on all operators:
+      - with default operand's value
+      - with certain operand's value,
+      should not allow non-number operands,
+      should allow non-integer operands
+  : filter description for 'Less than or equal to' number operator 1`] = `"Quantityis less than or equal to0"`;
+
+exports[`Number operations should render proper sql query on all operators:
+      - with default operand's value
+      - with certain operand's value,
+      should not allow non-number operands,
+      should allow non-integer operands
+  : filter description for 'Less than' number operator 1`] = `"Quantityis less than0"`;
+
+exports[`Number operations should render proper sql query on all operators:
+      - with default operand's value
+      - with certain operand's value,
+      should not allow non-number operands,
+      should allow non-integer operands
+  : filter description for 'Not equal to' number operator 1`] = `"Quantityis not equal to0"`;

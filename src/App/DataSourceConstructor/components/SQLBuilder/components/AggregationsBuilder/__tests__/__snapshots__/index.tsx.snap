@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Aggregations Builder should add 'Average of ' aggregation 1`] = `"Average ofQuantity"`;
+
+exports[`Aggregations Builder should add 'Average of ' aggregation 2`] = `
+"SELECT
+  avg(\\"orders1\\".\\"Quantity\\") AS \\"Average of Quantity\\"
+FROM
+  \\"orders\\" \\"orders1\\"
+LIMIT 2000
+"
+`;
+
+exports[`Aggregations Builder should add 'Cumulative sum of ' aggregation 1`] = `"Cumulative sum ofQuantity"`;
+
+exports[`Aggregations Builder should add 'Cumulative sum of ' aggregation 2`] = `
+"SELECT
+  sum(\\"orders1\\".\\"Quantity\\") AS \\"Cumulative sum of Quantity\\"
+FROM
+  \\"orders\\" \\"orders1\\"
+LIMIT 2000
+"
+`;
+
+exports[`Aggregations Builder should add 'Maximum of ' aggregation 1`] = `"Maximum ofQuantity"`;
+
+exports[`Aggregations Builder should add 'Maximum of ' aggregation 2`] = `
+"SELECT
+  max(\\"orders1\\".\\"Quantity\\") AS \\"Maximum of Quantity\\"
+FROM
+  \\"orders\\" \\"orders1\\"
+LIMIT 2000
+"
+`;
+
+exports[`Aggregations Builder should add 'Minimum of ' aggregation 1`] = `"Minimum ofQuantity"`;
+
+exports[`Aggregations Builder should add 'Minimum of ' aggregation 2`] = `
+"SELECT
+  min(\\"orders1\\".\\"Quantity\\") AS \\"Minimum of Quantity\\"
+FROM
+  \\"orders\\" \\"orders1\\"
+LIMIT 2000
+"
+`;
+
+exports[`Aggregations Builder should add 'Number of Distinct values of a date' and apply certain formatting 1`] = `"Number of distinct values ofCreated At"`;
+
+exports[`Aggregations Builder should add 'Number of Distinct values of a date' and apply certain formatting 2`] = `
+"SELECT
+  count(DISTINCT date_trunc('day', \\"orders1\\".\\"Created At\\")) AS \\"Distinct count of Created At\\"
+FROM
+  \\"orders\\" \\"orders1\\"
+LIMIT 2000
+"
+`;
+
+exports[`Aggregations Builder should add 'Standard deviation of ' aggregation 1`] = `"Standard deviation ofQuantity"`;
+
+exports[`Aggregations Builder should add 'Standard deviation of ' aggregation 2`] = `
+"SELECT
+  stddev(\\"orders1\\".\\"Quantity\\") AS \\"Standard deviation of Quantity\\"
+FROM
+  \\"orders\\" \\"orders1\\"
+LIMIT 2000
+"
+`;
+
+exports[`Aggregations Builder should add the 'Count of rows' aggregation' 1`] = `"Count of rows"`;
+
+exports[`Aggregations Builder should add the 'Count of rows' aggregation' 2`] = `
+"SELECT
+  count(*) AS \\"Count of rows\\"
+FROM
+  \\"orders\\"
+LIMIT 2000
+"
+`;
+
+exports[`Aggregations Builder should generate certain aggregation alias for foreign column 1`] = `
+"SELECT
+  sum(\\"products1\\".\\"Available amount\\") AS \\"Sum of Available amount (products1)\\"
+FROM
+  \\"orders\\" \\"orders1\\"
+  LEFT JOIN \\"products\\" \\"products1\\" ON \\"orders1\\".\\"ProductID\\" = \\"products1\\".\\"ID\\"
+LIMIT 2000
+"
+`;
+
+exports[`Aggregations Builder should generate indexation for duplicate column aggregations 1`] = `
+"SELECT
+  count(*) AS \\"Cumulative count of rows\\",
+  count(*) AS \\"Cumulative count of rows1\\"
+FROM
+  \\"orders\\"
+LIMIT 2000
+"
+`;
+
+exports[`Aggregations Builder should remove aggregation 1`] = `
+"SELECT
+  *
+FROM
+  \\"orders\\"
+LIMIT 2000
+"
+`;
+
+exports[`Aggregations Builder should update aggregation into 'Cumulitive count of rows' using back button 1`] = `"Cumulative count of rows"`;
+
+exports[`Aggregations Builder should update aggregation into 'Cumulitive count of rows' using back button 2`] = `
+"SELECT
+  count(*) AS \\"Cumulative count of rows\\"
+FROM
+  \\"orders\\"
+LIMIT 2000
+"
+`;
+
+exports[`Aggregations Builder should update aggregation into 'Sum of' 1`] = `"Sum ofQuantity"`;
+
+exports[`Aggregations Builder should update aggregation into 'Sum of' 2`] = `
+"SELECT
+  sum(\\"orders1\\".\\"Quantity\\") AS \\"Sum of Quantity\\"
+FROM
+  \\"orders\\" \\"orders1\\"
+LIMIT 2000
+"
+`;

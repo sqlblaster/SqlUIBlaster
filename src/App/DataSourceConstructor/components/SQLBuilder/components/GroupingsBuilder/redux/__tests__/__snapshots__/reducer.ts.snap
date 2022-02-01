@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`groupings reducer should add new grouping on ADD_GROUPING action 1`] = `
+Array [
+  Grouping {
+    "id": "1",
+  },
+]
+`;
+
+exports[`groupings reducer should add new grouping on ADD_GROUPING action 2`] = `
+Array [
+  Grouping {
+    "id": "1",
+  },
+  Grouping {
+    "id": "2",
+  },
+  Grouping {
+    "id": "3",
+  },
+]
+`;
+
+exports[`groupings reducer should clear all groupings on CLEAR_GROUPINGS action 1`] = `Array []`;
+
+exports[`groupings reducer should clear all groupings on CLEAR_GROUPINGS action 2`] = `Array []`;
+
+exports[`groupings reducer should remove grouping by id on REMOVE_GROUPING action 1`] = `Array []`;
+
+exports[`groupings reducer should remove grouping by id on REMOVE_GROUPING action 2`] = `
+Array [
+  Grouping {
+    "id": "1",
+  },
+  Grouping {
+    "id": "2",
+  },
+]
+`;
+
+exports[`groupings reducer should remove grouping by id on REMOVE_GROUPING action 3`] = `
+Array [
+  Grouping {
+    "id": "2",
+  },
+]
+`;
+
+exports[`groupings reducer should update grouping on UPDATE_GROUPING action 1`] = `Array []`;
+
+exports[`groupings reducer should update grouping on UPDATE_GROUPING action 2`] = `
+Array [
+  Grouping {
+    "id": "3",
+  },
+  Grouping {
+    "column": Object {
+      "_foreignTableName": undefined,
+      "_lastColumn": undefined,
+      "columnName": "ID",
+      "foreignColumn": undefined,
+      "foreignModelName": undefined,
+      "foreignTableName": undefined,
+      "modelName": "",
+      "tableName": "",
+      "type": undefined,
+    },
+    "id": "4",
+  },
+]
+`;
+
+exports[`groupings reducer should update grouping on UPDATE_GROUPING action 3`] = `
+Array [
+  Grouping {
+    "id": "3",
+  },
+  Grouping {
+    "id": "5",
+  },
+]
+`;

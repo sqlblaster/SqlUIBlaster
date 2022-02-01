@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`boolean operations should render proper sql query on all operators:
+      - with default operand's value
+      - with certain operand's value,
+      should not allow non-boolean operands,
+      should allow non-integer operands
+  : 'Is empty' boolean operator 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Paid\\" IS NULL
+LIMIT 2000
+"
+`;
+
+exports[`boolean operations should render proper sql query on all operators:
+      - with default operand's value
+      - with certain operand's value,
+      should not allow non-boolean operands,
+      should allow non-integer operands
+  : 'Is false' boolean operator 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Paid\\" = FALSE
+LIMIT 2000
+"
+`;
+
+exports[`boolean operations should render proper sql query on all operators:
+      - with default operand's value
+      - with certain operand's value,
+      should not allow non-boolean operands,
+      should allow non-integer operands
+  : 'Is not empty' boolean operator 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Paid\\" IS NOT NULL
+LIMIT 2000
+"
+`;
+
+exports[`boolean operations should render proper sql query on all operators:
+      - with default operand's value
+      - with certain operand's value,
+      should not allow non-boolean operands,
+      should allow non-integer operands
+  : default boolean operator 1`] = `
+"SELECT
+  orders1.*
+FROM
+  \\"orders\\" \\"orders1\\"
+WHERE
+  \\"orders1\\".\\"Paid\\" = TRUE
+LIMIT 2000
+"
+`;
+
+exports[`boolean operations should render proper sql query on all operators:
+      - with default operand's value
+      - with certain operand's value,
+      should not allow non-boolean operands,
+      should allow non-integer operands
+  : filter description for 'Is empty' boolean operator 1`] = `"Paidis empty"`;
+
+exports[`boolean operations should render proper sql query on all operators:
+      - with default operand's value
+      - with certain operand's value,
+      should not allow non-boolean operands,
+      should allow non-integer operands
+  : filter description for 'Is false' boolean operator 1`] = `"Paidis false"`;
+
+exports[`boolean operations should render proper sql query on all operators:
+      - with default operand's value
+      - with certain operand's value,
+      should not allow non-boolean operands,
+      should allow non-integer operands
+  : filter description for 'Is not empty' boolean operator 1`] = `"Paidis not empty"`;
+
+exports[`boolean operations should render proper sql query on all operators:
+      - with default operand's value
+      - with certain operand's value,
+      should not allow non-boolean operands,
+      should allow non-integer operands
+  : filter description for 'Is true' boolean operator 1`] = `"Paidis true"`;

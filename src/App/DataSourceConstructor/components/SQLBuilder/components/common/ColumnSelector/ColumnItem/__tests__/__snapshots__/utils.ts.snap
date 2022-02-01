@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getNewTableBranch should create new table branch on the basis of a column branch 1`] = `
+Object {
+  "_foreignTableName": undefined,
+  "_lastColumn": undefined,
+  "columnName": "ProductID",
+  "foreignColumn": Object {
+    "_foreignTableName": undefined,
+    "_lastColumn": undefined,
+    "columnName": "",
+    "foreignColumn": undefined,
+    "foreignModelName": undefined,
+    "foreignTableName": undefined,
+    "tableName": "Products",
+    "type": undefined,
+  },
+  "foreignModelName": undefined,
+  "foreignTableName": undefined,
+  "tableName": "",
+  "type": undefined,
+}
+`;
