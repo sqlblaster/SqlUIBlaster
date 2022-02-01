@@ -1,6 +1,6 @@
 import { format } from 'pg-formatter';
 import * as React from 'react';
-import { getConfiguredRender } from 'src/components/query-builder/App/DataSourceConstructor/test-utils/configured-render';
+import { getConfiguredRender } from 'src/App/DataSourceConstructor/test-utils/configured-render';
 import { DataSourceConstructor } from '../../..';
 import { DataSourceConstructorProps } from '../../../props';
 import { tablesMock } from '../../../redux/tables/tables.mock';

@@ -1,4 +1,4 @@
-import { Table } from 'src/components/query-builder/App/DataSourceConstructor/schemas';
+import { Table } from 'src/App/DataSourceConstructor/schemas';
 import { ColumnBranchAliased } from './models/ColumnAliased';
 import { TreeTable } from './models/TreeTable';
 

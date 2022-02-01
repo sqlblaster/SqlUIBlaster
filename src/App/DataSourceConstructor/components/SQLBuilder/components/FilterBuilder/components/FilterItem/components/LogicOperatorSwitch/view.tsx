@@ -1,6 +1,6 @@
 import { Button, List, ListItem, ListItemText, Typography, withStyles } from '@material-ui/core';
 import * as React from 'react';
-import { PopoverPaper } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/common/PopoverPaper';
+import { PopoverPaper } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/common/PopoverPaper';
 import { logicOperators } from './logic-operators';
 import { LogicOperatorSwitchViewProps } from './props';
 

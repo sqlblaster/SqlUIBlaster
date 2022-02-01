@@ -1,12 +1,12 @@
 import { ChangeEvent } from 'react';
-import { Column } from 'src/components/query-builder/App/DataSourceConstructor/schemas';
-import { ClassesProp } from 'src/components/query-builder/App/utils/classes-prop';
-import { GetExcludedFieldsOf } from 'src/components/query-builder/App/utils/type-filters';
+import { Column } from 'src/App/DataSourceConstructor/schemas';
+import { ClassesProp } from 'src/App/utils/classes-prop';
+import { GetExcludedFieldsOf } from 'src/App/utils/type-filters';
 import {
   actionCreators,
   PickActionCreators
-} from 'src/components/query-builder/store/action-creators';
-import { PickStates } from 'src/components/query-builder/store/models/State';
+} from 'src/store/action-creators';
+import { PickStates } from 'src/store/models/State';
 import { Variable } from 'src/schema';
 import { CheckedSelectProps } from '../../CheckedSelect/props';
 import { VariableItemProps } from '../../VariableItem';

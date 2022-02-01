@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { Table } from 'src/components/query-builder/App/DataSourceConstructor/schemas';
-import { getConfiguredRender } from 'src/components/query-builder/App/DataSourceConstructor/test-utils/configured-render';
-import { WithReduxProvider } from 'src/components/query-builder/App/DataSourceConstructor/test-utils/contexts-provider/with-ReduxProvider';
-import { getCertainCalledProps } from 'src/components/query-builder/App/DataSourceConstructor/test-utils/react-utils';
-import { getStore } from 'src/components/query-builder/App/DataSourceConstructor/test-utils/store/getStore';
+import { Table } from 'src/App/DataSourceConstructor/schemas';
+import { getConfiguredRender } from 'src/App/DataSourceConstructor/test-utils/configured-render';
+import { WithReduxProvider } from 'src/App/DataSourceConstructor/test-utils/contexts-provider/with-ReduxProvider';
+import { getCertainCalledProps } from 'src/App/DataSourceConstructor/test-utils/react-utils';
+import { getStore } from 'src/App/DataSourceConstructor/test-utils/store/getStore';
 import { ColumnSelector } from '..';
 import { ColumnSelectorOwnProps, TableColumnsProps } from '../props';
 import { TableColumns } from '../view';

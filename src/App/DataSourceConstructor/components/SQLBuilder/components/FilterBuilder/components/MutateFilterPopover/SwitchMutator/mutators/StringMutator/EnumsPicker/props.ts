@@ -1,5 +1,5 @@
 import { SelectProps } from '@material-ui/core/Select';
-import { ClassesProp } from 'src/components/query-builder/App/utils/classes-prop';
+import { ClassesProp } from 'src/App/utils/classes-prop';
 import { Variable } from 'src/schema';
 import { ColumnBranch } from '../../../../../../../common/ColumnSelector/ColumnItem/SelectedColumn.models';
 import { NullableVariable } from '../../../../../FilterItem/model';

@@ -2,7 +2,7 @@ import { InputAdornment, Typography, withStyles } from '@material-ui/core';
 import AccessTimeIcon from '@material-ui/icons/AccessTime';
 import { DatePicker, TimePicker } from 'material-ui-pickers';
 import * as React from 'react';
-import { RemoveButton } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/common/Icons/RemoveButton';
+import { RemoveButton } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/common/Icons/RemoveButton';
 import { FixedDatePickerViewProps } from './props';
 import { fixedDatePickerStyles } from './styles';
 

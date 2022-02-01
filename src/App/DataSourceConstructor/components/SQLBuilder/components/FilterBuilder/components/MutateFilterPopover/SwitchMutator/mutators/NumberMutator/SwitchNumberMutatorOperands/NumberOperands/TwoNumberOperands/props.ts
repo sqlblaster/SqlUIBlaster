@@ -1,4 +1,4 @@
-import { actionCreators, PickActionCreators } from 'src/components/query-builder/store/action-creators';
+import { actionCreators, PickActionCreators } from 'src/store/action-creators';
 import { NumberOperation } from '../../../NumberOperation';
 import { NumberFieldProps } from '../NumberField';
 

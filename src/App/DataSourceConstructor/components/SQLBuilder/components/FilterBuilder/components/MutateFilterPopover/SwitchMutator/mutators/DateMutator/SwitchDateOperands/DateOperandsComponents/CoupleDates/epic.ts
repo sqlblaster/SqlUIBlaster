@@ -1,9 +1,9 @@
 import { ofType } from 'redux-observable';
 import { of } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
-import { emitEmptyAction } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/redux/action-creators';
-import { raiseGlobalError } from 'src/components/query-builder/store/global-error/action';
-import { Epic } from 'src/components/query-builder/store/models/Epic';
+import { emitEmptyAction } from 'src/App/DataSourceConstructor/components/SQLBuilder/redux/action-creators';
+import { raiseGlobalError } from 'src/store/global-error/action';
+import { Epic } from 'src/store/models/Epic';
 import {
   changeCanSaveFilterState,
   ChangeCanSaveFilterStateAction

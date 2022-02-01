@@ -1,10 +1,10 @@
 import { SelectProps } from '@material-ui/core/Select';
-import { Table } from 'src/components/query-builder/App/DataSourceConstructor/schemas';
+import { Table } from 'src/App/DataSourceConstructor/schemas';
 import {
   actionCreators,
   PickActionCreators
-} from 'src/components/query-builder/store/action-creators';
-import { PickStates } from 'src/components/query-builder/store/models/State';
+} from 'src/store/action-creators';
+import { PickStates } from 'src/store/models/State';
 
 export type TableSelectorStateProps = PickStates<'selectedTable'> & {
   tables: Table[];

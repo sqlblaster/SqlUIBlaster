@@ -1,7 +1,7 @@
 import { Typography, withStyles } from '@material-ui/core';
 import ShareIcon from '@material-ui/icons/Share';
 import * as React from 'react';
-import { GetExcludedFieldsOf } from 'src/components/query-builder/App/utils/type-filters';
+import { GetExcludedFieldsOf } from 'src/App/utils/type-filters';
 import { SequentialColumnViewConfigProps, SequentialColumnViewProps } from './props';
 import { sequentialColumnViewStyles } from './styles';
 

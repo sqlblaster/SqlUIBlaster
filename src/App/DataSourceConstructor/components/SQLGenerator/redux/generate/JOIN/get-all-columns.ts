@@ -1,8 +1,8 @@
 import { clone } from 'ramda';
-import { Aggregation } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/AggregationsBuilder/components/AggregationItem/model';
-import { Filter } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/FilterBuilder/components/FilterItem/model';
-import { Grouping } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/GroupingsBuilder/components/GroupingItem/model';
-import { Order } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/OrdersBuilder/components/OrderItem/model';
+import { Aggregation } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/AggregationsBuilder/components/AggregationItem/model';
+import { Filter } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/FilterBuilder/components/FilterItem/model';
+import { Grouping } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/GroupingsBuilder/components/GroupingItem/model';
+import { Order } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/OrdersBuilder/components/OrderItem/model';
 import { CustomColumn } from '../../../../SQLBuilder/components/CustomColumnsBuilder/components/CustomColumnItem/model';
 import {
   AggregationAliased,

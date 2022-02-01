@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Provider } from 'react-redux';
 import { Store } from 'redux';
-import { State } from 'src/components/query-builder/store/models/State';
+import { State } from 'src/store/models/State';
 import { ContextProviderApplicator } from '../configured-render';
 
 export const WithReduxProvider: <TState = State>(

@@ -1,8 +1,8 @@
-import { Aggregation } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/AggregationsBuilder/components/AggregationItem/model';
-import { ColumnBranch } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/common/ColumnSelector/ColumnItem/SelectedColumn.models';
-import { Filter } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/FilterBuilder/components/FilterItem/model';
-import { Grouping } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/GroupingsBuilder/components/GroupingItem/model';
-import { Order } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/OrdersBuilder/components/OrderItem/model';
+import { Aggregation } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/AggregationsBuilder/components/AggregationItem/model';
+import { ColumnBranch } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/common/ColumnSelector/ColumnItem/SelectedColumn.models';
+import { Filter } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/FilterBuilder/components/FilterItem/model';
+import { Grouping } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/GroupingsBuilder/components/GroupingItem/model';
+import { Order } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/OrdersBuilder/components/OrderItem/model';
 import { CustomColumn } from '../../../../../SQLBuilder/components/CustomColumnsBuilder/components/CustomColumnItem/model';
 
 export class ColumnBranchAliased extends ColumnBranch {

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { getConfiguredRender } from 'src/components/query-builder/App/DataSourceConstructor/test-utils/configured-render';
+import { getConfiguredRender } from 'src/App/DataSourceConstructor/test-utils/configured-render';
 import { rowLimits } from '../row-limits';
 import { RowLimit } from '../RowLimit';
 import { RowLimitBuilder } from '../view';

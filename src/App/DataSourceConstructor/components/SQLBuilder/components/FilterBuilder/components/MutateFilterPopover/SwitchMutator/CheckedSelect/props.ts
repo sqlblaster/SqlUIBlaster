@@ -1,4 +1,4 @@
-import { ClassesProp } from 'src/components/query-builder/App/utils/classes-prop';
+import { ClassesProp } from 'src/App/utils/classes-prop';
 import { CheckedSelectClassKeys } from './styles';
 
 export interface CheckedSelectState {

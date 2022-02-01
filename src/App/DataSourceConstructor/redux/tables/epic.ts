@@ -1,8 +1,8 @@
 import { ofType } from 'redux-observable';
 import { of } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
-import { raiseGlobalError } from 'src/components/query-builder/store/global-error/action';
-import { Epic } from 'src/components/query-builder/store/models/Epic';
+import { raiseGlobalError } from 'src/store/global-error/action';
+import { Epic } from 'src/store/models/Epic';
 import { SetDatabaseSchemaAction } from '../database-schema/action';
 import { setTables } from './action';
 

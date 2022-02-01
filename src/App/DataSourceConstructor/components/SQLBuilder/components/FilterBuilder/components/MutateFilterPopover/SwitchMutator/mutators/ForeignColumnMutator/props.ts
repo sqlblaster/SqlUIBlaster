@@ -1,9 +1,9 @@
-import { ClassesProp } from 'src/components/query-builder/App/utils/classes-prop';
+import { ClassesProp } from 'src/App/utils/classes-prop';
 import {
   actionCreators,
   PickActionCreators
-} from 'src/components/query-builder/store/action-creators';
-import { PickStates } from 'src/components/query-builder/store/models/State';
+} from 'src/store/action-creators';
+import { PickStates } from 'src/store/models/State';
 import { ForeignFieldProps } from 'src/process/startnew/ForeignField';
 import { VariablesPickerProps } from '../../VariablesPicker/props';
 import { MutatorProps } from '../props';

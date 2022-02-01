@@ -4,7 +4,7 @@ import CheckIcon from '@material-ui/icons/CheckCircleOutline';
 import ShareIcon from '@material-ui/icons/Share';
 import KeyIcon from '@material-ui/icons/VpnKey';
 import * as React from 'react';
-import { ClassesProp } from 'src/components/query-builder/App/utils/classes-prop';
+import { ClassesProp } from 'src/App/utils/classes-prop';
 import { ColumnItemViewProps } from '../props';
 import { TypeIconClassKeys, typeIconStyles } from './styles';
 

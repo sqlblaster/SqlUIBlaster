@@ -1,4 +1,4 @@
-import { Action } from 'src/components/query-builder/store/models/action-types';
+import { Action } from 'src/store/models/action-types';
 import { AggregationBuilderActionCreators } from '../components/AggregationsBuilder/redux/action';
 import { SQLBCommonComponentsActionCreators } from '../components/common/action-creators';
 import { CustomColumnsBuilderActionCreators } from '../components/CustomColumnsBuilder/redux/action';

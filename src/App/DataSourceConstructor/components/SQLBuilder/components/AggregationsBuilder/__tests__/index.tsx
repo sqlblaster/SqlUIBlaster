@@ -4,7 +4,7 @@ import {
   queryByText as queryByTextOn
 } from 'react-testing-library';
 import { backIconPlaceholder } from 'src/__tests__/utils/mock-placeholders';
-import { regex } from 'src/components/query-builder/App/DataSourceConstructor/test-utils/utils';
+import { regex } from 'src/App/DataSourceConstructor/test-utils/utils';
 import { getGeneratedQuery, render } from '../../../__tests__/render.utils';
 import { aggregationsBuilderLabel } from '../../../labels';
 import { aggregationOperators } from '../../AggregationsBuilder/aggregations';

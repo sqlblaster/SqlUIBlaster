@@ -1,9 +1,9 @@
 import { Button, withStyles } from '@material-ui/core';
 import * as React from 'react';
-import { ColumnSelector } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/common/ColumnSelector';
-import { BackButton } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/common/Icons/BackButton';
-import { PopoverPaper } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/common/PopoverPaper';
-import { SequentialColumnView } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/common/SequentialColumnView';
+import { ColumnSelector } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/common/ColumnSelector';
+import { BackButton } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/common/Icons/BackButton';
+import { PopoverPaper } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/common/PopoverPaper';
+import { SequentialColumnView } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/common/SequentialColumnView';
 import { MutateFilterPopoverViewProps } from './props';
 import { mutateFilterPopoverStyles } from './styles';
 import { SwitchMutator } from './SwitchMutator';

@@ -1,4 +1,4 @@
-import { Action } from 'src/components/query-builder/store/models/action-types';
+import { Action } from 'src/store/models/action-types';
 import { QueryJSON } from './query-json.model';
 
 export type SetSQLQueryAction = Action<'SET_SQL_QUERY', { query: string }>;

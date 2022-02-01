@@ -1,7 +1,7 @@
 import { createStore, Store } from 'redux';
-import { Action } from 'src/components/query-builder/store/models/action-types';
-import { State } from 'src/components/query-builder/store/models/State';
-import { rootReducer } from 'src/components/query-builder/store/reducer';
+import { Action } from 'src/store/models/action-types';
+import { State } from 'src/store/models/State';
+import { rootReducer } from 'src/store/reducer';
 
 export const getStore = (
   initialState: Partial<State> = {}

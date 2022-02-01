@@ -1,6 +1,6 @@
 import { ChangeEvent } from 'react';
-import { ClassesProp } from 'src/components/query-builder/App/utils/classes-prop';
-import { actionCreators, PickActionCreators } from 'src/components/query-builder/store/action-creators';
+import { ClassesProp } from 'src/App/utils/classes-prop';
+import { actionCreators, PickActionCreators } from 'src/store/action-creators';
 import { OperatorViewProp, RenderBottomSectionProp } from '../..';
 import { CheckedSelectProps } from '../../../../../CheckedSelect/props';
 import { NearDateOperands, NearDateOperation } from './model';

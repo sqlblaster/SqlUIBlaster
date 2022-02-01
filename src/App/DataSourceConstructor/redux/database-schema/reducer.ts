@@ -1,5 +1,5 @@
 import { Reducer } from 'redux';
-import { DatabaseSchema } from 'src/components/query-builder/App/DataSourceConstructor/schemas';
+import { DatabaseSchema } from 'src/App/DataSourceConstructor/schemas';
 import { SetDatabaseSchemaAction } from './action';
 import { DatabaseSchemaState } from './state';
 

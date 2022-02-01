@@ -1,4 +1,4 @@
-import { Column } from 'src/components/query-builder/App/DataSourceConstructor/schemas';
+import { Column } from 'src/App/DataSourceConstructor/schemas';
 
 export type ColumnBranchFields = Pick<
   ColumnBranch,

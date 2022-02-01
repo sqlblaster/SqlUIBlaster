@@ -1,4 +1,4 @@
-import { PopoverManagerProps } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/common/WithPopoverManagement';
+import { PopoverManagerProps } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/common/WithPopoverManagement';
 import { LogicOperator } from './logic-operators';
 
 export interface LogicOperatorSwitchProps {

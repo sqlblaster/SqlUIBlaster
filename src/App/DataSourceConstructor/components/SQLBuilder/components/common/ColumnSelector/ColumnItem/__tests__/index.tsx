@@ -9,13 +9,13 @@ import {
   expandLessIconPlaceholder,
   expandMoreIconPlaceholder
 } from 'src/__tests__/utils/mock-placeholders';
-import { tablesMock } from 'src/components/query-builder/App/DataSourceConstructor/redux/tables/tables.mock';
-import { Column } from 'src/components/query-builder/App/DataSourceConstructor/schemas';
-import { getConfiguredRender } from 'src/components/query-builder/App/DataSourceConstructor/test-utils/configured-render';
+import { tablesMock } from 'src/App/DataSourceConstructor/redux/tables/tables.mock';
+import { Column } from 'src/App/DataSourceConstructor/schemas';
+import { getConfiguredRender } from 'src/App/DataSourceConstructor/test-utils/configured-render';
 import {
   getCertainCalledProps,
   getFirstCalledProps
-} from 'src/components/query-builder/App/DataSourceConstructor/test-utils/react-utils';
+} from 'src/App/DataSourceConstructor/test-utils/react-utils';
 import { ColumnItem } from '../';
 import { TableColumns } from '../../view';
 import { ColumnItemProps } from '../props';

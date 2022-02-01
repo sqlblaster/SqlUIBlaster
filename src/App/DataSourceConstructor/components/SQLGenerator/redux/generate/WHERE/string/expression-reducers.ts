@@ -1,5 +1,5 @@
-import { StringOperator } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/FilterBuilder/components/MutateFilterPopover/SwitchMutator/mutators/StringMutator/operators';
-import { StringOperands } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/FilterBuilder/components/MutateFilterPopover/SwitchMutator/mutators/StringMutator/StringOperation';
+import { StringOperator } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/FilterBuilder/components/MutateFilterPopover/SwitchMutator/mutators/StringMutator/operators';
+import { StringOperands } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/FilterBuilder/components/MutateFilterPopover/SwitchMutator/mutators/StringMutator/StringOperation';
 import { emptyExpressionReducers } from '../empty-expression-reducers';
 
 export const preprocessOperand = (

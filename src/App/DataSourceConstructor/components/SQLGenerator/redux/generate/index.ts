@@ -1,8 +1,8 @@
-import { QueryJSON } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLGenerator/redux/query-json.model';
+import { QueryJSON } from 'src/App/DataSourceConstructor/components/SQLGenerator/redux/query-json.model';
 import {
   PickStates,
   State
-} from 'src/components/query-builder/store/models/State';
+} from 'src/store/models/State';
 import { generateAggregations } from './AGGREGATIONS';
 import { generateGroupings } from './GROUPINGS';
 import { generateJoins } from './JOIN';

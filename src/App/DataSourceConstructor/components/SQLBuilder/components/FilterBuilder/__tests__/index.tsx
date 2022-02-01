@@ -1,6 +1,6 @@
 import { fireEvent, getByText as getByTextOn } from 'react-testing-library';
 import { backIconPlaceholder } from 'src/__tests__/utils/mock-placeholders';
-import { regexWord } from 'src/components/query-builder/App/DataSourceConstructor/test-utils/utils';
+import { regexWord } from 'src/App/DataSourceConstructor/test-utils/utils';
 import { getGeneratedQuery, render } from '../../../__tests__/render.utils';
 import { selectAColumn } from '../../common/ColumnSelector/__tests__/utils/select-a-column';
 import { selectATable } from '../../TableSelector/__tests__/utils/select-table';

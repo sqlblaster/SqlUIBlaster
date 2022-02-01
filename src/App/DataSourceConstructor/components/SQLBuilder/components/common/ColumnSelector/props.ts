@@ -1,5 +1,5 @@
-import { ClassesProp } from 'src/components/query-builder/App/utils/classes-prop';
-import { PickStates } from 'src/components/query-builder/store/models/State';
+import { ClassesProp } from 'src/App/utils/classes-prop';
+import { PickStates } from 'src/store/models/State';
 import { ColumnItemDelegatedProp } from './ColumnItem/props';
 import { ColumnBranch } from './ColumnItem/SelectedColumn.models';
 import { TableColumnsClassKeys } from './styles';

@@ -1,8 +1,8 @@
 import { List, ListItem, ListItemText, withStyles } from '@material-ui/core';
 import * as React from 'react';
-import { ColumnSelector } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/common/ColumnSelector';
-import { BackButton } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/common/Icons/BackButton';
-import { PopoverPaper } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/common/PopoverPaper';
+import { ColumnSelector } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/common/ColumnSelector';
+import { BackButton } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/common/Icons/BackButton';
+import { PopoverPaper } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/common/PopoverPaper';
 import { aggregationOperators } from '../../aggregations';
 import { Aggregation } from '../AggregationItem/model';
 import { AggregationTips } from './AggregationTips';

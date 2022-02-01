@@ -1,6 +1,6 @@
-import { ClassesProp } from 'src/components/query-builder/App/utils/classes-prop';
-import { PickActionCreators } from 'src/components/query-builder/store/action-creators';
-import { PickStates } from 'src/components/query-builder/store/models/State';
+import { ClassesProp } from 'src/App/utils/classes-prop';
+import { PickActionCreators } from 'src/store/action-creators';
+import { PickStates } from 'src/store/models/State';
 import { RowLimitProps } from './RowLimit';
 import { RowLimitBuilderClassKeys } from './styles';
 

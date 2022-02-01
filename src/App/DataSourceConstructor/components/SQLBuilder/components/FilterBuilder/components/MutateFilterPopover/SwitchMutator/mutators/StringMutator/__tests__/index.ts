@@ -13,18 +13,18 @@ import {
 import {
   getGeneratedQuery,
   render
-} from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/__tests__/render.utils';
+} from 'src/App/DataSourceConstructor/components/SQLBuilder/__tests__/render.utils';
 import {
   clickAddTheFilter,
   clickUpdateTheFilter
-} from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/FilterBuilder/__tests__/utils/filter-utils';
-import { selectATable } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/TableSelector/__tests__/utils/select-table';
-import { tablesMock } from 'src/components/query-builder/App/DataSourceConstructor/redux/tables/tables.mock';
+} from 'src/App/DataSourceConstructor/components/SQLBuilder/components/FilterBuilder/__tests__/utils/filter-utils';
+import { selectATable } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/TableSelector/__tests__/utils/select-table';
+import { tablesMock } from 'src/App/DataSourceConstructor/redux/tables/tables.mock';
 import {
   getAllByText$,
   getByText$,
   regex
-} from 'src/components/query-builder/App/DataSourceConstructor/test-utils/utils';
+} from 'src/App/DataSourceConstructor/test-utils/utils';
 import { clickAddAFilter } from '../../../../../AddFilter/__tests__/utils/click-add-a-filter';
 import { addFilterText, mutatorPanelId } from '../../../../view';
 import { StringOperator, stringOperators } from '../operators';

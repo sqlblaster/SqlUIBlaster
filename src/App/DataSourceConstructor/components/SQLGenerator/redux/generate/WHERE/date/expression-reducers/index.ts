@@ -1,4 +1,4 @@
-import { DateOperation } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/FilterBuilder/components/MutateFilterPopover/SwitchMutator/mutators/DateMutator/DateOperation';
+import { DateOperation } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/FilterBuilder/components/MutateFilterPopover/SwitchMutator/mutators/DateMutator/DateOperation';
 import { emptyExpressionReducers } from '../../empty-expression-reducers';
 import { ExpressionReducer } from '../../expression-reducer.model';
 import { coupleDateExpressionReducer } from './couple-date';

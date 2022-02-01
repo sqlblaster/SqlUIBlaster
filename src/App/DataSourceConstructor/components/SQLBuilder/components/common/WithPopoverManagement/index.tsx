@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { GetExcludedFieldsOf } from 'src/components/query-builder/App/utils/type-filters';
+import { GetExcludedFieldsOf } from 'src/App/utils/type-filters';
 import { PopoverPaperProps } from '../PopoverPaper';
 
 export interface PopoverManagerState {

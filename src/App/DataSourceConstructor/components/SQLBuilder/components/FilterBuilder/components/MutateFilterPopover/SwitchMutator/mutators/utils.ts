@@ -1,7 +1,7 @@
 import {
   Column,
   Table
-} from 'src/components/query-builder/App/DataSourceConstructor/schemas';
+} from 'src/App/DataSourceConstructor/schemas';
 import { ColumnBranch } from '../../../../../common/ColumnSelector/ColumnItem/SelectedColumn.models';
 
 export const getEnums = (

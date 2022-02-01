@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { State } from 'src/components/query-builder/store/models/State';
+import { State } from 'src/store/models/State';
 import { GroupingsBuilderStateProps } from './props';
 import { GroupingsBuilder as View } from './view';
 

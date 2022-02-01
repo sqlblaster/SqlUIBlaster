@@ -1,5 +1,5 @@
-import { Table } from 'src/components/query-builder/App/DataSourceConstructor/schemas';
-import { State } from 'src/components/query-builder/store/models/State';
+import { Table } from 'src/App/DataSourceConstructor/schemas';
+import { State } from 'src/store/models/State';
 import { Variable } from 'src/schema';
 import { DataSourceConstructorProps } from './props';
 

@@ -1,4 +1,4 @@
-import { PickStates } from 'src/components/query-builder/store/models/State';
+import { PickStates } from 'src/store/models/State';
 import { ColumnBranch } from '../../../common/ColumnSelector/ColumnItem/SelectedColumn.models';
 import { ColumnSelectorProps } from '../../../common/ColumnSelector/props';
 import { PopoverPaperProps } from '../../../common/PopoverPaper';

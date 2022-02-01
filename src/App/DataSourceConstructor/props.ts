@@ -1,11 +1,11 @@
 import {
   actionCreators,
   PickActionCreators
-} from 'src/components/query-builder/store/action-creators';
+} from 'src/store/action-creators';
 import {
   PickStates,
   State
-} from 'src/components/query-builder/store/models/State';
+} from 'src/store/models/State';
 import { Variable } from 'src/schema';
 import { ClassesProp } from '../utils/classes-prop';
 import { QueryJSON } from './components/SQLGenerator/redux/query-json.model';

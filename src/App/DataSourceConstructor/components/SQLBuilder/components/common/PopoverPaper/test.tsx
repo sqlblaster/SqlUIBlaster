@@ -1,9 +1,9 @@
 import { Popover } from '@material-ui/core';
 import * as casual from 'casual';
 import * as React from 'react';
-import { getConfiguredRender } from 'src/components/query-builder/App/DataSourceConstructor/test-utils/configured-render';
-import { WithReduxProvider } from 'src/components/query-builder/App/DataSourceConstructor/test-utils/contexts-provider/with-ReduxProvider';
-import { getStore } from 'src/components/query-builder/App/DataSourceConstructor/test-utils/store/getStore';
+import { getConfiguredRender } from 'src/App/DataSourceConstructor/test-utils/configured-render';
+import { WithReduxProvider } from 'src/App/DataSourceConstructor/test-utils/contexts-provider/with-ReduxProvider';
+import { getStore } from 'src/App/DataSourceConstructor/test-utils/store/getStore';
 import { PopoverPaper, PopoverPaperProps } from '.';
 
 const render = getConfiguredRender<PopoverPaperProps>(

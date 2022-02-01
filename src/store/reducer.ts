@@ -1,5 +1,5 @@
 import { combineReducers, Reducer } from 'redux';
-import { DataSourceConstructorReducers } from 'src/components/query-builder/App/DataSourceConstructor/redux/reducers';
+import { DataSourceConstructorReducers } from 'src/App/DataSourceConstructor/redux/reducers';
 import { globalError } from './global-error/reducer';
 import { Action } from './models/action-types';
 import { State } from './models/State';

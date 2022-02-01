@@ -1,4 +1,4 @@
-import { Action } from 'src/components/query-builder/store/models/action-types';
+import { Action } from 'src/store/models/action-types';
 import { Grouping } from '../components/GroupingItem/model';
 
 export type AddGroupingAction = Action<'ADD_GROUPING', { grouping: Grouping }>;

@@ -1,5 +1,5 @@
 import { fireEvent, getByText } from 'react-testing-library';
-import { regex } from 'src/components/query-builder/App/DataSourceConstructor/test-utils/utils';
+import { regex } from 'src/App/DataSourceConstructor/test-utils/utils';
 import { customColumnsBuilderLabel } from '../../../../../../labels';
 import { addCustomColumnPlaceholder } from '../../view';
 

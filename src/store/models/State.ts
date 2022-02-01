@@ -1,4 +1,4 @@
-import { DataSourceConstructorState } from 'src/components/query-builder/App/DataSourceConstructor/redux/state';
+import { DataSourceConstructorState } from 'src/App/DataSourceConstructor/redux/state';
 import { GlobalErrorState } from '../global-error/state';
 import { VariablesState } from '../variables/state';
 

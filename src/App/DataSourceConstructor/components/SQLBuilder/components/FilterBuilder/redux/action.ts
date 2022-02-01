@@ -1,4 +1,4 @@
-import { Action } from 'src/components/query-builder/store/models/action-types';
+import { Action } from 'src/store/models/action-types';
 import { Filter } from '../components/FilterItem/model';
 import { MutateFilterPopoverActionCreators } from '../components/MutateFilterPopover/redux/actions';
 

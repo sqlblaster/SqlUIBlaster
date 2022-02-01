@@ -1,4 +1,4 @@
-import { Action } from 'src/components/query-builder/store/models/action-types';
+import { Action } from 'src/store/models/action-types';
 import { Aggregation } from '../components/AggregationItem/model';
 
 export type AddAggregationAction = Action<

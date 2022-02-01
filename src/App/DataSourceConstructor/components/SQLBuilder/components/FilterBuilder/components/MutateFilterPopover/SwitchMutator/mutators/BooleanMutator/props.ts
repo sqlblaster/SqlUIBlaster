@@ -1,5 +1,5 @@
-import { ClassesProp } from 'src/components/query-builder/App/utils/classes-prop';
-import { actionCreators, PickActionCreators } from 'src/components/query-builder/store/action-creators';
+import { ClassesProp } from 'src/App/utils/classes-prop';
+import { actionCreators, PickActionCreators } from 'src/store/action-creators';
 import { CheckedSelectProps } from '../../CheckedSelect/props';
 import { MutatorProps } from '../props';
 import { BooleanOperation } from './BooleanOperation';

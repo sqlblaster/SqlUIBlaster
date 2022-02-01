@@ -1,14 +1,14 @@
 import { fireEvent, getByText, queryByText, wait } from 'react-testing-library';
 import { expandMoreIconPlaceholder } from 'src/__tests__/utils/mock-placeholders';
-import { tablesMock } from 'src/components/query-builder/App/DataSourceConstructor/redux/tables/tables.mock';
+import { tablesMock } from 'src/App/DataSourceConstructor/redux/tables/tables.mock';
 import {
   Column,
   Table
-} from 'src/components/query-builder/App/DataSourceConstructor/schemas';
+} from 'src/App/DataSourceConstructor/schemas';
 import {
   getByText$,
   regex
-} from 'src/components/query-builder/App/DataSourceConstructor/test-utils/utils';
+} from 'src/App/DataSourceConstructor/test-utils/utils';
 
 export const selectAColumn = (
   column: Column,

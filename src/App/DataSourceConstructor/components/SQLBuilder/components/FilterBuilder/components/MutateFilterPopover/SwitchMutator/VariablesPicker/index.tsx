@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
-import { WithPopoverManagement } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/common/WithPopoverManagement';
-import { State } from 'src/components/query-builder/store/models/State';
+import { WithPopoverManagement } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/common/WithPopoverManagement';
+import { State } from 'src/store/models/State';
 import {
   IVariablesPickerHandlers,
   VariablesPickerOwnProps,

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { WithPopoverManagement } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/common/WithPopoverManagement';
+import { WithPopoverManagement } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/common/WithPopoverManagement';
 import {
   LogicOperatorSwitchProps,
   LogicOperatorSwitchViewProps as ViewProps

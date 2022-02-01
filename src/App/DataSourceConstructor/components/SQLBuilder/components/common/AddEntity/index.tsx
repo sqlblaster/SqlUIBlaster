@@ -1,7 +1,7 @@
 import { Typography, withStyles } from '@material-ui/core';
 import AddIcon from '@material-ui/icons/Add';
 import * as React from 'react';
-import { ClassesProp } from 'src/components/query-builder/App/utils/classes-prop';
+import { ClassesProp } from 'src/App/utils/classes-prop';
 import { AddEntityClassKeys, addEntityStyles } from './styles';
 
 export type AddEntityProps = {

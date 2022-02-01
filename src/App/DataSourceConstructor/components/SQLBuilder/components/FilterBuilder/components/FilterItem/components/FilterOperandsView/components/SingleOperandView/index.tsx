@@ -1,6 +1,6 @@
 import { Typography, withStyles } from '@material-ui/core';
 import * as React from 'react';
-import { ClassesProp } from 'src/components/query-builder/App/utils/classes-prop';
+import { ClassesProp } from 'src/App/utils/classes-prop';
 import { VariableItem } from '../../../../../MutateFilterPopover/SwitchMutator/VariableItem';
 import { Filter } from '../../../../model';
 import { SingleOperandViewClassKeys, singleOperandViewStyles } from './styles';

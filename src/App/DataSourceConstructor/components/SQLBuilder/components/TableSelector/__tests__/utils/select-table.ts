@@ -1,10 +1,10 @@
 import { fireEvent, getByText } from 'react-testing-library';
-import { tablesMock } from 'src/components/query-builder/App/DataSourceConstructor/redux/tables/tables.mock';
+import { tablesMock } from 'src/App/DataSourceConstructor/redux/tables/tables.mock';
 import {
   Column,
   Table
-} from 'src/components/query-builder/App/DataSourceConstructor/schemas';
-import { regex } from 'src/components/query-builder/App/DataSourceConstructor/test-utils/utils';
+} from 'src/App/DataSourceConstructor/schemas';
+import { regex } from 'src/App/DataSourceConstructor/test-utils/utils';
 import { tablePickerPlaceholder } from '../../view';
 
 export interface TableSelectorParams {

@@ -1,8 +1,8 @@
 import { ofType } from 'redux-observable';
 import { of } from 'rxjs';
 import { catchError, mergeMap } from 'rxjs/operators';
-import { actionCreators } from 'src/components/query-builder/store/action-creators';
-import { Epic } from 'src/components/query-builder/store/models/Epic';
+import { actionCreators } from 'src/store/action-creators';
+import { Epic } from 'src/store/models/Epic';
 import { SelectTableAction } from './action';
 const {
   raiseGlobalError,

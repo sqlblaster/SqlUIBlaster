@@ -1,4 +1,4 @@
-import { ClassesProp } from 'src/components/query-builder/App/utils/classes-prop';
+import { ClassesProp } from 'src/App/utils/classes-prop';
 import { ColumnBranch } from '../../../common/ColumnSelector/ColumnItem/SelectedColumn.models';
 import { ColumnSelectorProps } from '../../../common/ColumnSelector/props';
 import { PopoverPaperProps } from '../../../common/PopoverPaper';

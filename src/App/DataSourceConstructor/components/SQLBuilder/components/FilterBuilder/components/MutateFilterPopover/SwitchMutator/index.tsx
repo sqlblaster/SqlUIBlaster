@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Column } from 'src/components/query-builder/App/DataSourceConstructor/schemas';
+import { Column } from 'src/App/DataSourceConstructor/schemas';
 import { BooleanMutator } from './mutators/BooleanMutator';
 import { DateMutator } from './mutators/DateMutator';
 import { ForeignColumnMutator } from './mutators/ForeignColumnMutator';

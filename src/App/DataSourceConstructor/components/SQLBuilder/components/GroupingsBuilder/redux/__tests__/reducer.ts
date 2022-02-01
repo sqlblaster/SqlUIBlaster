@@ -1,4 +1,4 @@
-import { testInitialAndCurrentState } from 'src/components/query-builder/App/DataSourceConstructor/test-utils/store/reducers';
+import { testInitialAndCurrentState } from 'src/App/DataSourceConstructor/test-utils/store/reducers';
 import { ColumnBranch } from '../../../common/ColumnSelector/ColumnItem/SelectedColumn.models';
 import { Grouping } from '../../components/GroupingItem/model';
 import {

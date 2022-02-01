@@ -1,4 +1,4 @@
-import { AggregationOperator } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/AggregationsBuilder/aggregations';
+import { AggregationOperator } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/AggregationsBuilder/aggregations';
 import { ColumnBranchAliased } from '../JOIN/models/ColumnAliased';
 import { getAlias } from './utils';
 

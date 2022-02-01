@@ -1,5 +1,5 @@
 import { Reducer } from 'redux';
-import { Action } from 'src/components/query-builder/store/models/action-types';
+import { Action } from 'src/store/models/action-types';
 
 const unknownAction: Action = { type: 'UNKNOWN_ACTION' };
 

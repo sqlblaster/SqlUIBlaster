@@ -6,13 +6,13 @@ import {
 import {
   getGeneratedQuery,
   render
-} from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/__tests__/render.utils';
+} from 'src/App/DataSourceConstructor/components/SQLBuilder/__tests__/render.utils';
 import {
   clickAddTheFilter,
   clickUpdateTheFilter
-} from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/FilterBuilder/__tests__/utils/filter-utils';
-import { selectATable } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/TableSelector/__tests__/utils/select-table';
-import { regex } from 'src/components/query-builder/App/DataSourceConstructor/test-utils/utils';
+} from 'src/App/DataSourceConstructor/components/SQLBuilder/components/FilterBuilder/__tests__/utils/filter-utils';
+import { selectATable } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/TableSelector/__tests__/utils/select-table';
+import { regex } from 'src/App/DataSourceConstructor/test-utils/utils';
 import { clickAddAFilter } from '../../../../../../../../../AddFilter/__tests__/utils/click-add-a-filter';
 import { updateFilterText } from '../../../../../../../../view';
 import { DateOperator, dateOperators } from '../../../../../operators';

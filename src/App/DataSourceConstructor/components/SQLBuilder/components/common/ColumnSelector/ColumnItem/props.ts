@@ -1,5 +1,5 @@
 import { CollapseProps } from '@material-ui/core/Collapse';
-import { Column } from 'src/components/query-builder/App/DataSourceConstructor/schemas';
+import { Column } from 'src/App/DataSourceConstructor/schemas';
 import { TableColumnsDelegatedProps } from '../props';
 import { ColumnBranch } from './SelectedColumn.models';
 

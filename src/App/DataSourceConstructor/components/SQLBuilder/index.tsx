@@ -1,11 +1,11 @@
 import { withStyles } from '@material-ui/core';
 import * as React from 'react';
 import { connect } from 'react-redux';
-import { ClassesProp } from 'src/components/query-builder/App/utils/classes-prop';
+import { ClassesProp } from 'src/App/utils/classes-prop';
 import {
   PickStates,
   State
-} from 'src/components/query-builder/store/models/State';
+} from 'src/store/models/State';
 import { AggregationsBuilder } from './components/AggregationsBuilder';
 import { FeaturedField } from './components/common/FieldLabel';
 import { CustomColumnsBuilder } from './components/CustomColumnsBuilder';

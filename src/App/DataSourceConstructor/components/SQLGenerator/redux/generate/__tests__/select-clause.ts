@@ -1,4 +1,4 @@
-import { tablesMock } from 'src/components/query-builder/App/DataSourceConstructor/redux/tables/tables.mock';
+import { tablesMock } from 'src/App/DataSourceConstructor/redux/tables/tables.mock';
 import { generateSQLQuery, SQLGeneratorStateProps } from '..';
 
 const state: SQLGeneratorStateProps = {

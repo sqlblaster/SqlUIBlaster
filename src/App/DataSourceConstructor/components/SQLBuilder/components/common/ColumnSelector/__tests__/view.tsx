@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { tablesMock } from 'src/components/query-builder/App/DataSourceConstructor/redux/tables/tables.mock';
-import { Column, Table } from 'src/components/query-builder/App/DataSourceConstructor/schemas';
-import { getConfiguredRender } from 'src/components/query-builder/App/DataSourceConstructor/test-utils/configured-render';
+import { tablesMock } from 'src/App/DataSourceConstructor/redux/tables/tables.mock';
+import { Column, Table } from 'src/App/DataSourceConstructor/schemas';
+import { getConfiguredRender } from 'src/App/DataSourceConstructor/test-utils/configured-render';
 import { ColumnItem } from '../ColumnItem';
 import { ColumnBranch } from '../ColumnItem/SelectedColumn.models';
 import { TableColumnsProps } from '../props';

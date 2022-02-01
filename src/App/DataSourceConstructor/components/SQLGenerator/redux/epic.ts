@@ -1,9 +1,9 @@
 import { ofType } from 'redux-observable';
 import { of } from 'rxjs';
 import { catchError, mergeMap } from 'rxjs/operators';
-import { raiseGlobalError } from 'src/components/query-builder/store/global-error/action';
-import { Epic } from 'src/components/query-builder/store/models/Epic';
-import { UpdateRootStateAction } from 'src/components/query-builder/store/reducer';
+import { raiseGlobalError } from 'src/store/global-error/action';
+import { Epic } from 'src/store/models/Epic';
+import { UpdateRootStateAction } from 'src/store/reducer';
 import {
   AggregationActions,
   aggregationActionTypes

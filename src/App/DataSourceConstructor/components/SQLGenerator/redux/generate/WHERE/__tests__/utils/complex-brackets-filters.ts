@@ -1,4 +1,4 @@
-import { NumberOperation } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/FilterBuilder/components/MutateFilterPopover/SwitchMutator/mutators/NumberMutator/NumberOperation';
+import { NumberOperation } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/FilterBuilder/components/MutateFilterPopover/SwitchMutator/mutators/NumberMutator/NumberOperation';
 import {
   ColumnBranchAliased,
   FilterAliased

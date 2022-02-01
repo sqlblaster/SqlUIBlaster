@@ -1,8 +1,8 @@
 import {
   actionCreators,
   PickActionCreators
-} from 'src/components/query-builder/store/action-creators';
-import { PickStates } from 'src/components/query-builder/store/models/State';
+} from 'src/store/action-creators';
+import { PickStates } from 'src/store/models/State';
 import { PopoverManagerProps } from '../../../common/WithPopoverManagement';
 
 export type AddOrderOwnProps = PopoverManagerProps;

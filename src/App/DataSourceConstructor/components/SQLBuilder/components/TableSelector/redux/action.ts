@@ -1,5 +1,5 @@
-import { Table } from 'src/components/query-builder/App/DataSourceConstructor/schemas';
-import { Action } from 'src/components/query-builder/store/models/action-types';
+import { Table } from 'src/App/DataSourceConstructor/schemas';
+import { Action } from 'src/store/models/action-types';
 
 export type SelectTableAction = Action<
   'SELECT_TABLE',

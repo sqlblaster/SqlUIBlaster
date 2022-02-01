@@ -1,7 +1,7 @@
 import { withStyles } from '@material-ui/core';
 import BackIcon from '@material-ui/icons/ArrowBackIos';
 import * as React from 'react';
-import { ClassesProp } from 'src/components/query-builder/App/utils/classes-prop';
+import { ClassesProp } from 'src/App/utils/classes-prop';
 import { BackButtonClassKeys, backButtonStyles } from './styles';
 
 type BackButtonProps = {

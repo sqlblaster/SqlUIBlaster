@@ -1,7 +1,7 @@
 import * as casual from 'casual';
 import * as React from 'react';
 import { render } from 'react-testing-library';
-import { getCertainCalledProps } from 'src/components/query-builder/App/DataSourceConstructor/test-utils/react-utils';
+import { getCertainCalledProps } from 'src/App/DataSourceConstructor/test-utils/react-utils';
 import { PopoverManagerProps, WithPopoverManagement } from '.';
 
 describe('WithPopoverManagement', () => {

@@ -1,6 +1,6 @@
 import { withStyles } from '@material-ui/core';
 import * as React from 'react';
-import { RemoveButton } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/common/Icons/RemoveButton';
+import { RemoveButton } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/common/Icons/RemoveButton';
 import { SequentialColumnItem } from '../../../common/SequentialColumnView';
 import { MutateFilterPopover } from '../MutateFilterPopover';
 import { Brackets } from './components/Brackets';

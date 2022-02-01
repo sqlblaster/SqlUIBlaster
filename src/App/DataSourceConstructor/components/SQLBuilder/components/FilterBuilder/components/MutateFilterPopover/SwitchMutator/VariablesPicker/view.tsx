@@ -2,7 +2,7 @@ import { IconButton, List, ListItem, withStyles } from '@material-ui/core';
 import { IconButtonProps } from '@material-ui/core/IconButton';
 import VariableIcon from '@material-ui/icons/Code';
 import * as React from 'react';
-import { PopoverPaper } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/common/PopoverPaper';
+import { PopoverPaper } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/common/PopoverPaper';
 import { VariableItem } from '../VariableItem';
 import { VariablesPickerViewProps } from './props';
 import { variablesPickerStyles } from './styles';

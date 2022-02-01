@@ -1,10 +1,10 @@
 import { applyMiddleware, compose, createStore, Store } from 'redux';
 import { createEpicMiddleware } from 'redux-observable';
-import { epic } from 'src/components/query-builder/store/epic';
-import { Action } from 'src/components/query-builder/store/models/action-types';
-import { dependencies } from 'src/components/query-builder/store/models/Dependencies';
-import { State } from 'src/components/query-builder/store/models/State';
-import { rootReducer } from 'src/components/query-builder/store/reducer';
+import { epic } from 'src/store/epic';
+import { Action } from 'src/store/models/action-types';
+import { dependencies } from 'src/store/models/Dependencies';
+import { State } from 'src/store/models/State';
+import { rootReducer } from 'src/store/reducer';
 
 export const getStoreWithEpics = (
   initialState: Partial<State> = {}

@@ -1,4 +1,4 @@
-import { ForeignColumnOperation } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/FilterBuilder/components/MutateFilterPopover/SwitchMutator/mutators/ForeignColumnMutator/ForeignColumnOperation';
+import { ForeignColumnOperation } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/FilterBuilder/components/MutateFilterPopover/SwitchMutator/mutators/ForeignColumnMutator/ForeignColumnOperation';
 import { Variable, VariableType } from 'src/schema';
 import { generateForeignColumnOperation } from '..';
 import {

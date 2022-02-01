@@ -1,4 +1,4 @@
-import { tablesMock } from 'src/components/query-builder/App/DataSourceConstructor/redux/tables/tables.mock';
+import { tablesMock } from 'src/App/DataSourceConstructor/redux/tables/tables.mock';
 import { generateSQLQuery, SQLGeneratorStateProps } from '..';
 import { zeroLvlGroupings } from './utils.joins/0-lvl-groupings';
 import { oneLvlGroupings } from './utils.joins/1-lvl-groupings';

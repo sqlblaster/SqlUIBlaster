@@ -1,5 +1,5 @@
 import * as casual from 'casual';
-import { testInitialAndCurrentState } from 'src/components/query-builder/App/DataSourceConstructor/test-utils/store/reducers';
+import { testInitialAndCurrentState } from 'src/App/DataSourceConstructor/test-utils/store/reducers';
 import { resetRowLimit, RowLimitActions, setRowLimit } from '../action';
 import { defaultRowLimitValue, rowLimit as reducer } from '../reducer';
 

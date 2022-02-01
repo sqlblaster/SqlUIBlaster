@@ -4,7 +4,7 @@ import {
   getByText as getByTextOn,
   queryByText as queryByTextOn
 } from 'react-testing-library';
-import { regex } from 'src/components/query-builder/App/DataSourceConstructor/test-utils/utils';
+import { regex } from 'src/App/DataSourceConstructor/test-utils/utils';
 import { getGeneratedQuery, render } from '../../../__tests__/render.utils';
 import { ordersBuilderLabel } from '../../../labels';
 import { selectAColumn } from '../../common/ColumnSelector/__tests__/utils/select-a-column';

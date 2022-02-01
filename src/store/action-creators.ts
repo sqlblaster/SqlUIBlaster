@@ -1,4 +1,4 @@
-import { DSCActionCreators } from 'src/components/query-builder/App/DataSourceConstructor/redux/action-creators';
+import { DSCActionCreators } from 'src/App/DataSourceConstructor/redux/action-creators';
 import { raiseGlobalError } from './global-error/action';
 import { updateRootState } from './reducer';
 

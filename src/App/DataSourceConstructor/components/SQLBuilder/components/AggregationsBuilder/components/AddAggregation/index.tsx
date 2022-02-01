@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
-import { State } from 'src/components/query-builder/store/models/State';
+import { State } from 'src/store/models/State';
 import { WithPopoverManagement } from '../../../common/WithPopoverManagement';
 import {
   AAMapDispatchToProps,

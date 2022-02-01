@@ -1,4 +1,4 @@
-import { State } from 'src/components/query-builder/store/models/State';
+import { State } from 'src/store/models/State';
 import { CustomColumn } from '../../../SQLBuilder/components/CustomColumnsBuilder/components/CustomColumnItem/model';
 import { Filter } from '../../../SQLBuilder/components/FilterBuilder/components/FilterItem/model';
 import { Grouping } from '../../../SQLBuilder/components/GroupingsBuilder/components/GroupingItem/model';

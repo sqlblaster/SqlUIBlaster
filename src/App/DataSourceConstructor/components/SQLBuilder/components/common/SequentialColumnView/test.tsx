@@ -1,6 +1,6 @@
 import * as casual from 'casual';
 import * as React from 'react';
-import { getConfiguredRender } from 'src/components/query-builder/App/DataSourceConstructor/test-utils/configured-render';
+import { getConfiguredRender } from 'src/App/DataSourceConstructor/test-utils/configured-render';
 import { SequentialColumnView } from '.';
 import { ColumnBranch } from '../ColumnSelector/ColumnItem/SelectedColumn.models';
 import {

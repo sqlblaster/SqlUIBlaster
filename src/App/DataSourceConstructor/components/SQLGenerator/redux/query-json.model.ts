@@ -1,9 +1,9 @@
-import { Aggregation } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/AggregationsBuilder/components/AggregationItem/model';
-import { Filter } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/FilterBuilder/components/FilterItem/model';
-import { Grouping } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/GroupingsBuilder/components/GroupingItem/model';
-import { Order } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/OrdersBuilder/components/OrderItem/model';
-import { SQLBuilderState } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/redux/state';
-import { GetExcludedFieldsOf } from 'src/components/query-builder/App/utils/type-filters';
+import { Aggregation } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/AggregationsBuilder/components/AggregationItem/model';
+import { Filter } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/FilterBuilder/components/FilterItem/model';
+import { Grouping } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/GroupingsBuilder/components/GroupingItem/model';
+import { Order } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/OrdersBuilder/components/OrderItem/model';
+import { SQLBuilderState } from 'src/App/DataSourceConstructor/components/SQLBuilder/redux/state';
+import { GetExcludedFieldsOf } from 'src/App/utils/type-filters';
 import { ColumnBranch } from '../../SQLBuilder/components/common/ColumnSelector/ColumnItem/SelectedColumn.models';
 import { CustomColumn } from '../../SQLBuilder/components/CustomColumnsBuilder/components/CustomColumnItem/model';
 import { RowLimitBuilderState } from '../../SQLBuilder/components/RowLimit/redux/state';

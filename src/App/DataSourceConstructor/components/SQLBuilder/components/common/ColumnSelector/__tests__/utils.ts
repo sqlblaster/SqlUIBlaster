@@ -1,5 +1,5 @@
 import * as casual from 'casual';
-import { Column } from 'src/components/query-builder/App/DataSourceConstructor/schemas';
+import { Column } from 'src/App/DataSourceConstructor/schemas';
 import { ColumnBranch } from '../ColumnItem/SelectedColumn.models';
 import {
   filterColumns,

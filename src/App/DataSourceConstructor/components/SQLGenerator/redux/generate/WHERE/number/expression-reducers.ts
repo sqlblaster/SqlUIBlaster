@@ -1,5 +1,5 @@
-import { NumberOperands } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/FilterBuilder/components/MutateFilterPopover/SwitchMutator/mutators/NumberMutator/NumberOperation';
-import { NumberOperator } from 'src/components/query-builder/App/DataSourceConstructor/components/SQLBuilder/components/FilterBuilder/components/MutateFilterPopover/SwitchMutator/mutators/NumberMutator/operators';
+import { NumberOperands } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/FilterBuilder/components/MutateFilterPopover/SwitchMutator/mutators/NumberMutator/NumberOperation';
+import { NumberOperator } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/FilterBuilder/components/MutateFilterPopover/SwitchMutator/mutators/NumberMutator/operators';
 import { emptyExpressionReducers } from '../empty-expression-reducers';
 import { ExpressionReducer } from '../expression-reducer.model';
 
