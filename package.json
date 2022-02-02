@@ -2,33 +2,12 @@
   "name": "sql-generator-ui",
   "version": "1.0.0",
   "private": true,
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
-  "devDependencies": {
-    "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^12.1.2",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.4.0",
-    "@types/node": "^16.11.22",
-    "@types/react": "^17.0.38",
-    "@types/react-dom": "^17.0.11",
-    "react-scripts": "5.0.0",
-    "react-app-rewired": "^2.1.11",
-    "typescript": "^4.5.5"
-  },
   "scripts": {
-    "start": "react-app-rewired start",
     "build": "react-app-rewired build",
+    "eject": "react-app-rewired eject",
+    "start": "react-app-rewired start",
     "test": "react-app-rewired test",
-    "eject": "react-app-rewired eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "sort-deps": "npx sort-package-json"
   },
   "browserslist": {
     "production": [
@@ -41,5 +20,47 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "dependencies": {
+    "@date-io/moment": "^1.1.0",
+    "@material-ui/core": "^3.9.3",
+    "@material-ui/icons": "^3.0.2",
+    "material-ui-pickers": "^2.2.4",
+    "moment": "^2.24.0",
+    "ramda": "^0.26.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-number-format": "^4.9.1",
+    "react-redux": "^7.0.3",
+    "redux": "^4.0.1",
+    "redux-observable": "^1.1.0",
+    "rxjs": "^6.5.2",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^24.9.1",
+    "@types/moment": "^2.13.0",
+    "@types/node": "^16.11.22",
+    "@types/ramda": "^0.26.5",
+    "@types/react": "^16.8.10",
+    "@types/react-dom": "^16.8.3",
+    "@types/react-redux": "^7.0.9",
+    "@types/uuid": "^3.4.4",
+    "casual": "^1.6.2",
+    "jest": "^24.9.0",
+    "jest-dom": "^3.5.0",
+    "react-app-rewired": "^2.1.11",
+    "react-scripts": "5.0.0",
+    "react-testing-library": "^7.0.1",
+    "typescript": "^4.5.5"
   }
 }
