@@ -23,7 +23,7 @@ export const getAliasedEntities = <
   reducer: (column: ColumnBranchAliased, entity: TEntity) => TEntityAliased,
   hasNoColumnAction?: (entity: TEntity) => TEntityAliased
 ): TEntityAliased[] => {
-  return clone(entities).map(entity => {
+  return entities.map(entity => {
     if (hasNoColumnAction) {
       return hasNoColumnAction(entity);
     }

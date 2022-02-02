@@ -10,7 +10,7 @@ export const getNewColumnBranch = (
   tableBranch: ColumnBranch,
   { name, type, foreignTableName, foreignModelName }: Column
 ) => {
-  const newColumnBranch = clone(tableBranch);
+  const newColumnBranch = new ColumnBranch(clone(tableBranch));
 
   const lastColumn = newColumnBranch.lastColumn;
   lastColumn.columnName = name;

@@ -6,7 +6,7 @@ export const getNewTableBranch = (
   foreignTableName: ColumnBranch['foreignTableName'],
   foreignModelName: ColumnBranch['foreignModelName']
 ) => {
-  const newTableBranch = clone(parentColumnBranch);
+  const newTableBranch = new ColumnBranch(clone(parentColumnBranch));
 
   newTableBranch.lastColumn.foreignColumn = new ColumnBranch({
     tableName: foreignTableName,

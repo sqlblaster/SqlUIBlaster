@@ -29,7 +29,7 @@ describe('ColumnBranch', () => {
   it('should have properly working isEqual method', () => {
     const originalColumnBranch = columnBranchWithForeignColumns;
 
-    const cloneColumnBranch = clone(originalColumnBranch);
+    const cloneColumnBranch = new ColumnBranch(clone(originalColumnBranch));
 
     expect(originalColumnBranch.equals(cloneColumnBranch)).toBeTruthy();
   });
