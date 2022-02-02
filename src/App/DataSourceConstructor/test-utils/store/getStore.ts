@@ -6,4 +6,8 @@ import { rootReducer } from 'src/store/reducer';
 export const getStore = (
   initialState: Partial<State> = {}
 ): Store<State, Action> =>
-  createStore<State, Action, {}, {}>(rootReducer, initialState);
+  createStore<State, Action, {}, {}>(
+    rootReducer, 
+    // @ts-ignore
+    initialState
+  );

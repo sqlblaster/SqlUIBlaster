@@ -1,4 +1,4 @@
-import * as moment from 'moment';
+import moment from 'moment';
 import { PluralDateComponent } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/FilterBuilder/components/MutateFilterPopover/SwitchMutator/mutators/DateMutator/SwitchDateOperands/DateOperandsComponents/NearDate/plural-date-components';
 import { RelativeDate } from 'src/App/DataSourceConstructor/components/SQLBuilder/components/FilterBuilder/components/MutateFilterPopover/SwitchMutator/mutators/DateMutator/SwitchDateOperands/DatePickerByOperandsType/components/RelativeDatePicker/singular-date-components';
 

@@ -1,5 +1,5 @@
 import { Variable } from 'src/schema';
-import * as uuid from 'uuid';
+import uuid from 'uuid';
 import { ColumnBranch } from '../../../common/ColumnSelector/ColumnItem/SelectedColumn.models';
 import { Operation } from '../MutateFilterPopover/Operation';
 import { LogicOperator } from './components/LogicOperatorSwitch/logic-operators';

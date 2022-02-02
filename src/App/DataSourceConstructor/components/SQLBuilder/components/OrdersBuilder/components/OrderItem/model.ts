@@ -1,4 +1,4 @@
-import * as uuid from 'uuid';
+import uuid from 'uuid';
 import { ColumnBranch } from '../../../common/ColumnSelector/ColumnItem/SelectedColumn.models';
 import { SortOrder } from './orders';
 

@@ -1,4 +1,4 @@
-import * as moment from 'moment';
+import moment from 'moment';
 import { DateOperator } from '../../../MutateFilterPopover/SwitchMutator/mutators/DateMutator/operators';
 import { CoupleDateOperands } from '../../../MutateFilterPopover/SwitchMutator/mutators/DateMutator/SwitchDateOperands/DateOperandsComponents/CoupleDates/model';
 import { NearDateOperands } from '../../../MutateFilterPopover/SwitchMutator/mutators/DateMutator/SwitchDateOperands/DateOperandsComponents/NearDate/model';

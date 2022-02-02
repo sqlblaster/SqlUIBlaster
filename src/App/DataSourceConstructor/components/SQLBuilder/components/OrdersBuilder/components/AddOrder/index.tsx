@@ -18,7 +18,7 @@ export const AddOrder = connect<AddOrderStateProps, AddOrderDispatchProps, {}, S
     public static ViewWithPopoverManagement = WithPopoverManagement(View);
 
     public render() {
-      return <AddOrder.ViewWithPopoverManagement addOrder={this.props.addOrder} {...this.props} />;
+      return <AddOrder.ViewWithPopoverManagement {...this.props} />;
     }
   }
 );

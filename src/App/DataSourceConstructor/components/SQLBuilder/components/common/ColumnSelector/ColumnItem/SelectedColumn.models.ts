@@ -6,6 +6,7 @@ export type ColumnBranchFields = Pick<
 >;
 
 export class ColumnBranch {
+  private _foreignTableName: Column['foreignTableName'];
   public get foreignTableName(): ColumnBranch['_foreignTableName'] {
     return this._foreignTableName && this._foreignTableName.toLowerCase();
   }
@@ -13,6 +14,7 @@ export class ColumnBranch {
     this._foreignTableName = value && value.toLowerCase();
     this.foreignModelName = value;
   }
+  private _lastColumn: ColumnBranch | undefined;
   public get lastColumn(): ColumnBranch {
     return !this._lastColumn ? this : this._lastColumn;
   }
@@ -26,9 +28,6 @@ export class ColumnBranch {
 
   public foreignColumn: ColumnBranch | undefined;
   public foreignModelName: Column['foreignModelName'];
-
-  private _foreignTableName: Column['foreignTableName'];
-  private _lastColumn: ColumnBranch | undefined;
 
   constructor(...inits: Partial<ColumnBranch>[]) {
     Object.assign(this, ...inits);

@@ -7,6 +7,7 @@ import { CustomColumn } from '../../../../../SQLBuilder/components/CustomColumns
 
 export class ColumnBranchAliased extends ColumnBranch {
   public tableAlias: string = '';
+  // @ts-ignore
   public lastColumn: ColumnBranchAliased;
   public foreignColumn: ColumnBranchAliased;
 

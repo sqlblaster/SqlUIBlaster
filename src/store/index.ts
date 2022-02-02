@@ -30,6 +30,7 @@ export const getConfiguredStore = (
 
   const store = createStore<State, Action, {}, {}>(
     rootReducer,
+    // @ts-ignore
     initialState,
     enhancer
   );

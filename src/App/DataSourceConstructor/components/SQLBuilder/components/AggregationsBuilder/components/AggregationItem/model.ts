@@ -1,5 +1,5 @@
 import { Column } from 'src/App/DataSourceConstructor/schemas';
-import * as uuid from 'uuid';
+import uuid from 'uuid';
 import { ColumnBranch } from '../../../common/ColumnSelector/ColumnItem/SelectedColumn.models';
 import { AggregationOperator } from '../../aggregations';
 

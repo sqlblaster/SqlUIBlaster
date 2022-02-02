@@ -4,11 +4,11 @@ import {
   PickActionCreators
 } from 'src/store/action-creators';
 import { PickStates } from 'src/store/models/State';
-import { ForeignFieldProps } from 'src/process/startnew/ForeignField';
 import { VariablesPickerProps } from '../../VariablesPicker/props';
 import { MutatorProps } from '../props';
 import { ForeignColumnOperation } from './ForeignColumnOperation';
 import { ForeignColumnMutatorClassKeys } from './styles';
+import { Maybe, NavigationSearchResultItem } from 'src/schema';
 
 export type ForeignColumnMutatorOwnProps = MutatorProps;
 
@@ -33,7 +33,7 @@ export type ForeignColumnMutatorProps = ForeignColumnMutatorOwnProps &
   ForeignColumnMutatorDispatchProps;
 
 export interface IForeignColumnMutatorHandlers {
-  handleOperandChange: ForeignFieldProps['handleChange'];
+  handleOperandChange: (definition: Maybe<Partial<NavigationSearchResultItem>>) => void;
   handleVariablePick: VariablesPickerProps['onVariablePicked'];
   filter: Required<VariablesPickerProps>['filter'];
 }

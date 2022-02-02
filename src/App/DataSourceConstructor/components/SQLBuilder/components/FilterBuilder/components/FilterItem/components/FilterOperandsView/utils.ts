@@ -68,7 +68,7 @@ export const getFormattedSingleOperand = (
       case 'Number':
       case 'String':
       default:
-        return <number | string>operation.operands;
+        return operation.operands as number | string;
     }
   } else {
     throw new Error('expected singular operand');

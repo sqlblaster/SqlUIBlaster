@@ -1,6 +1,6 @@
 import { withStyles } from '@material-ui/core';
 import * as React from 'react';
-import { ForeignField } from 'src/process/startnew/ForeignField';
+// import { ForeignField } from 'src/process/startnew/ForeignField';
 import { VariableType } from 'src/schema';
 import { VariableItem } from '../../VariableItem';
 import { VariablesPicker } from '../../VariablesPicker';
@@ -31,7 +31,7 @@ export const ForeignColumnMutator = withStyles(foreignColumnMutatorStyles)(
           </div>
           <hr className={classes.hr} />
           <div className={classes['common-padding']}>
-            <ForeignField
+            {/* <ForeignField
               handleChange={handleOperandChange}
               id={record ? record.id : ''}
               parent={
@@ -54,7 +54,7 @@ export const ForeignColumnMutator = withStyles(foreignColumnMutatorStyles)(
                   <VariableItem variable={pickedVariables} />
                 )
               }
-            />
+            /> */}
           </div>
           <hr className={classes.hr} />
           <div
