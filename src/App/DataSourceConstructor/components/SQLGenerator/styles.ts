@@ -9,17 +9,18 @@ export const sqlGeneratorStyles: StyleRulesCallback<
     display: 'flex',
     flexDirection: 'column',
     padding: '20px',
-    border: '1px solid gray'
+    minWidth: 300
   },
   title: {
     fontWeight: 'bold',
     fontSize: '15px',
     color: '#33383E',
-    padding: '5px'
+    margin: '5px 0px'
   },
   query: {
+    width: '100%',
     whiteSpace: 'pre-wrap',
-    padding: '15px',
+    padding: 20,
     border: '1px solid #E8EAEC',
     borderRadius: '3px',
     color: '#44484C',

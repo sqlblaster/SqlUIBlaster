@@ -6,6 +6,7 @@ import {
   SQLGeneratorStateProps
 } from './props';
 import { SQLGenerator as View } from './view';
+import { format as formatSql } from 'sql-formatter';
 
 export const SQLGenerator = connect<
   SQLGeneratorStateProps,
@@ -13,5 +14,5 @@ export const SQLGenerator = connect<
   SQLGeneratorOwnProps,
   State
 >(({ sqlQuery }) => ({
-  sqlQuery
+  sqlQuery: sqlQuery ? formatSql(sqlQuery) : 'No Sql Query Yet'
 }))(View);

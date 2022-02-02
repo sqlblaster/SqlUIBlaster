@@ -41,6 +41,7 @@
     "redux": "^4.0.1",
     "redux-observable": "^1.1.0",
     "rxjs": "^6.5.2",
+    "sql-formatter": "^4.0.2",
     "uuid": "^3.3.2"
   },
   "devDependencies": {

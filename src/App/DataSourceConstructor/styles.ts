@@ -6,9 +6,6 @@ export const queryBuilderStyles: StyleRulesCallback<
   QueryBuilderClassKeys
 > = (theme) => ({
   root: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'column'
+    display: 'flex'
   }
 });

@@ -9,7 +9,6 @@ export const sqlBuilderStyles: StyleRulesCallback<
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'left',
-    background: '#fff',
-    width: '100%',
+    background: '#fff'
   }
 });
